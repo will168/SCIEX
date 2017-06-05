@@ -63,11 +63,213 @@
 
 
 
-<style type="text/css">
-   /* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);*/
+    
+<style>
+  .new-slider{
+    display: none;
+  }
+  .feature{
+    margin:0px;
+  }
+  .callouts{
+    margin-top:20px;
+    margin-bottom: 20px;
+  }
+  .product-section {
+    /*background-color: /*#f5f5f5;*/
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-top:20px;
+  }
+  .product-section .tabHeader {
+    background-color: #0084A9!important;
+  }
+  .product-section .tabHeader h4.heading-1 {
+    height: 50px;
+    padding: 10px 0 0 15px;
+    color: #fff;
+  }
+  .col-3-img {
+    overflow: hidden;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .col-3-img .gridView {
+    height: 360px;
+  }
+  .border-right{
+    border-right: 1px solid #D3D3D3;
+  }
+  .col-3-img .gridView h2 {
+    margin-top: 10px;
+  }
+  .col-3-img .gridView .contentRow {
+    height: 125px;
+  }
+  .col-3-img .imageRow>div:first-child{
+    text-align: center;
+    height:200px;
+  }
+  .gridView div.learnMore {
+    position: absolute;
+    bottom: 0px;
+  }
+  .learnMore a {
+    color: #F99D31;
+  }
+/*.feature.clearfix > .col-md-6.content{
+  width:66.67%;
+}
+.feature.clearfix > .col-md-6.image{
+  width:33.33%;
+}*/
+#front .callout .image{
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+/* TABLETS */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .feature{
+    height:255px;
+  }
+  /*.feature.clearfix > .col-md-6.content{
+    width:58.33333333%;
+  }
+  .feature.clearfix > .col-md-6.image{
+    width: 41.66666667%;
+  }*/
+  .col-3-img .gridView{
+    height:400px;
+  }
+  .col-3-img .gridView .contentRow{
+    height:160px;
+  }
+}
+@media only screen and (max-width: 992px){
+  #slider .slideshow .image{
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 767px){
+  .new-slider{
+    display: block;
+  }
+  #front .container-fluid{
+    padding:15px;
+  }
+  #slider .slideshow .image{
+    background-size:contain;
+    height:145px;
+  }
+  .feature{
+    margin-bottom: 20px;
+  }
+  .feature .content{
+    height:auto;
+    padding:15px;
+  }
+  .feature .image{
+    text-align: center;
+    padding:0 0 15px 0;
+  }
+  .feature .image img{
+    max-width: 100%;
+    width: auto;
+  }
+  .product-section .tabHeader h4.heading-1 {
+    padding: 10px;
+    font-size: 22px;
+  }
+  .col-3-img .imageRow>div:first-child{
+    height:auto;
+  }
+  .col-3-img .gridView .tableView{
+    padding:0 10px;
+  }
+  .col-3-img .gridView .tableView > div {
+    padding: 0px;
+  }
+  .col-3-img{
+    padding:0px;
+  }
+  .col-3-img .gridView .tableView > div {
+    padding: 0px;
+  }
+  .col-3-img .gridView {
+    height:240px;
+  }
+  .gridView div p {
+    margin: 0px 0px 10px 0px;
+  }
+  .gridView div.learnMore {
+    position: relative;
+    bottom: 0px;
+  }
+  .border-right{
+    border:0px;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation:landscape){
+  #slider .slideshow .image{
+   height: 290px;
+ }
+ .feature{
+  height: auto;
+}
+.feature .content{
+  height:240px;
+}
+.container-fluid>.row>div.col-xs-12{
+  width:50%;
+}  
+.col-3-img .gridView h2{
+  font-size:16px;
+}
+.col-3-img .imageRow>div:first-child{
+  height:200px;
+}
+.col-3-img .gridView.col-xs-12{
+  width:33.3333%;
+  height:430px;
+}
+.col-3-img .gridView .contentRow{
+  height:180px;
+}
+.col-3-img .border-right{
+  border-right: 1px solid #D3D3D3;
+}
+.col-3-img .gridView .tableView{
+  width:100%;
+}
+.col-3-img .gridView div.learnMore{
+  position: absolute;
+  bottom:0px;
+}
+}
+.quotes {height:45px !important;margin-top:-17.5px;margin-bottom:17.5px;border:1px solid #bec0c2;padding:10px 0px;}
+.typeBg{height:43px !important;padding:10px;background-color:#0084A9;color:white;width:175px;top:-10px;position:relative;white-space: nowrap; text-overflow: ellipsis; overflow:hidden;display:inline-block;text-align:center;}
+.CTA{padding:10px 0px; width:135px;float:right;text-align:left;top:-10px;position:relative;white-space: nowrap; text-overflow: ellipsis; overflow:hidden;display:inline-block;background-color:white;} 
+.CTAText{color:#f99d31;font-weight:400;}
+.details{padding:10px 5px 10px 10px;top:-10px;position:relative;white-space: nowrap; text-overflow: ellipsis; overflow:hidden;display:inline-block;background-color:white;} 
+</style>
 
-/*
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}table{border-collapse:collapse;border-spacing:0;}*/
+
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+<style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}table{border-collapse:collapse;border-spacing:0;}
 
 * {
   -webkit-box-sizing: border-box;
@@ -98,16 +300,13 @@ body {
   text-align: center;
   font-size: 5em;
   color: #404041;
-}
-*/
+}*/
+
 .fixed-container {
     height: inherit;
-    max-width: 1400px;
+    max-width: 1040px;
     max-width: 87.5rem;
     margin: auto;
-   
-    background: #0084a9;
-   
 }
 
 
@@ -117,20 +316,19 @@ body {
   xmargin-top: 20px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-
 }
 
 .navbar-default .navbar-nav>li>a {
-  width: 142.5px;
-  /*font-weight: bold;*/
+  width: 145px;
+  xfont-weight: bold;
   color:#fff;
   text-align:center;
+
 }
 
 .mega-dropdown, .mega-dropdown-technology, .mega-dropdown-applications, .mega-dropdown-diagnostics,  .mega-dropdown-education, .mega-dropdown-support, .mega-dropdown-events, .mega-dropdown-aboutus {
   position: static !important;
   xwidth: 100%;
-  
 }
 
 .mega-dropdown-menu, .mega-dropdown-menu-technology, .mega-dropdown-menu-applications, .mega-dropdown-menu-diagnostics, .mega-dropdown-menu-education, .mega-dropdown-menu-support, .mega-dropdown-menu-events, .mega-dropdown-menu-aboutus {
@@ -138,7 +336,6 @@ body {
   width: 100%;
   box-shadow: none;
   -webkit-box-shadow: none;
-  z-index: 88888;
 }
 
 
@@ -149,7 +346,7 @@ body {
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
-    left: 90px;
+    left: 150px;
     margin-left: -8px;
 }  
 
@@ -161,7 +358,7 @@ body {
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
-    left: 230px;
+    left: 295px;
     margin-left: -8px;
 }  
 
@@ -173,7 +370,7 @@ body {
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
-    left: 370px;
+    left: 440px;
     margin-left: -8px;
 }  
 
@@ -184,7 +381,7 @@ body {
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
-    left: 515px;
+    left: 585px;
     margin-left: -8px;
 }  
 
@@ -195,7 +392,7 @@ body {
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
-    left: 655px;
+    left: 730px;
     margin-left: -8px;
 }  
 
@@ -206,7 +403,7 @@ body {
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
-    left: 800px;
+    left: 875px;
     margin-left: -8px;
 }  
 
@@ -218,7 +415,7 @@ body {
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
-    left: 940px;
+    left: 1020px;
     margin-left: -8px;
 }  
 
@@ -229,7 +426,7 @@ body {
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
-    left: 1085px;
+    left: 1165px;
     margin-left: -8px;
 }  
 .mega-dropdown-menu > li > ul, .mega-dropdown-menu-technology > li > ul,  .mega-dropdown-menu-applications > li > ul, .mega-dropdown-menu-diagnostics  > li > ul, .mega-dropdown-menu-education > li > ul, .mega-dropdown-menu-support > li > ul, .mega-dropdown-menu-events > li > ul, .mega-dropdown-menu-aboutus > li > ul  {
@@ -320,228 +517,45 @@ body {
 
 /* Override Nav styling*/
 
-.navbar-default .navbar-brand { color:#fff;  }
+.navbar-default .navbar-brand { color:#fff; }
 .navbar-default .navbar-nav>li:hover { background:#00afdb; }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus { color: #fff; }
-.navbar-nav { font-size: 18px; line-height: 18px; font-weight:normal; }
-/*.navbar-nav>li:first-child { margin-left:100px; }*/
-.navbar {
-    background: #0084a9;
-    position: fixed;
-    margin: 0 auto;
-    width: 100%;
-    z-index: 88888888888;
-}
-.navbar-default {
-    
-    border-radius: 0;
-    border-color: transparent;
-}
 .carousel { position: relative; margin-left: 22px; }
 .form-control, .btn-block { display: block; width: 94%; }
-#master { padding-top: 70px; }
+.navbar-nav {  font-family: 'proxima-nova',Arial,Verdana,Sans-serif; font-size:19px; font-weight:normal; margin-left:65px; }
+.navbar-default { border-color:transparent; }
+.navbar { margin-bottom:0; }
+#front {  padding: 0px 0 90px 0; width: 1140px; margin: 0 auto; }
 
-</style>
-
-
-    
-    
-<style>
-  .new-slider{
-    display: none;
-  }
-  .feature{
-    margin:0px;
-  }
-  .callouts{
-    margin-top:20px;
-    margin-bottom: 20px;
-  }
-  .product-section {
-    /*background-color: /*#f5f5f5;*/
-    background-color: #fff;
-    margin-bottom: 20px;
-    margin-top:20px;
-  }
-  .product-section .tabHeader {
-    background-color: #0084A9!important;
-  }
-  .product-section .tabHeader h4.heading-1 {
-    height: 50px;
-    padding: 10px 0 0 15px;
-    color: #fff;
-  }
-  .col-3-img {
-    overflow: hidden;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  .col-3-img .gridView {
-    height: 360px;
-  }
-  .border-right{
-    border-right: 1px solid #D3D3D3;
-  }
-  .col-3-img .gridView h2 {
-    margin-top: 10px;
-  }
-  .col-3-img .gridView .contentRow {
-    height: 125px;
-  }
-  .col-3-img .imageRow>div:first-child{
-    text-align: center;
-    height:200px;
-  }
-  .gridView div.learnMore {
-    position: absolute;
-    bottom: 0px;
-  }
-  .learnMore a {
-    color: #F99D31;
-  }
-/*.feature.clearfix > .col-md-6.content{
-  width:66.67%;
-}
-.feature.clearfix > .col-md-6.image{
-  width:33.33%;
-}*/
-#front .callout .image{
-  text-align: center;
-  padding: 20px 0 20px 0;
-}
-/* TABLETS */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .feature{
-    height:255px;
-  }
-  /*.feature.clearfix > .col-md-6.content{
-    width:58.33333333%;
-  }
-  .feature.clearfix > .col-md-6.image{
-    width: 41.66666667%;
-  }*/
-  .col-3-img .gridView{
-    height:400px;
-  }
-  .col-3-img .gridView .contentRow{
-    height:160px;
-  }
-
-  .navbar { display:none; }
-}
-@media only screen and (max-width: 992px){
-  #slider .slideshow .image{
-    background-size: contain;
-  }
-  .navbar { display:none; }
-}
-@media only screen and (max-width: 767px){
-  .new-slider{
-    display: block;
-  }
-  #front .container-fluid{
-    padding:15px;
-  }
-  #slider .slideshow .image{
-    background-size:contain;
-    height:145px;
-  }
-  .feature{
-    margin-bottom: 20px;
-  }
-  .feature .content{
-    height:auto;
-    padding:15px;
-  }
-  .feature .image{
-    text-align: center;
-    padding:0 0 15px 0;
-  }
-  .feature .image img{
-    max-width: 100%;
-    width: auto;
-  }
-  .product-section .tabHeader h4.heading-1 {
-    padding: 10px;
-    font-size: 22px;
-  }
-  .col-3-img .imageRow>div:first-child{
-    height:auto;
-  }
-  .col-3-img .gridView .tableView{
-    padding:0 10px;
-  }
-  .col-3-img .gridView .tableView > div {
-    padding: 0px;
-  }
-  .col-3-img{
-    padding:0px;
-  }
-  .col-3-img .gridView .tableView > div {
-    padding: 0px;
-  }
-  .col-3-img .gridView {
-    height:240px;
-  }
-  .gridView div p {
-    margin: 0px 0px 10px 0px;
-  }
-  .gridView div.learnMore {
+.section>div {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1350px;
     position: relative;
-    bottom: 0px;
-  }
-  .border-right{
-    border:0px;
-  }
-
-  .navbar { display:none; }
-}
-@media only screen and (max-width: 767px) and (orientation:landscape){
-  #slider .slideshow .image{
-   height: 290px;
- }
- .feature{
-  height: auto;
-}
-.feature .content{
-  height:240px;
-}
-.container-fluid>.row>div.col-xs-12{
-  width:50%;
-}  
-.col-3-img .gridView h2{
-  font-size:16px;
-}
-.col-3-img .imageRow>div:first-child{
-  height:200px;
-}
-.col-3-img .gridView.col-xs-12{
-  width:33.3333%;
-  height:430px;
-}
-.col-3-img .gridView .contentRow{
-  height:180px;
-}
-.col-3-img .border-right{
-  border-right: 1px solid #D3D3D3;
-}
-.col-3-img .gridView .tableView{
-  width:100%;
-}
-.col-3-img .gridView div.learnMore{
-  position: absolute;
-  bottom:0px;
 }
 
-.navbar { display:none; }
-
+#header>div {
+    height: 70px;
+    width: 1180px;
 }
-.quotes {height:45px !important;margin-top:-17.5px;margin-bottom:17.5px;border:1px solid #bec0c2;padding:10px 0px;}
-.typeBg{height:43px !important;padding:10px;background-color:#0084A9;color:white;width:175px;top:-10px;position:relative;white-space: nowrap; text-overflow: ellipsis; overflow:hidden;display:inline-block;text-align:center;}
-.CTA{padding:10px 0px; width:135px;float:right;text-align:left;top:-10px;position:relative;white-space: nowrap; text-overflow: ellipsis; overflow:hidden;display:inline-block;background-color:white;} 
-.CTAText{color:#f99d31;font-weight:400;}
-.details{padding:10px 5px 10px 10px;top:-10px;position:relative;white-space: nowrap; text-overflow: ellipsis; overflow:hidden;display:inline-block;background-color:white;} 
+
+h1, .heading-1 {
+    margin: 0 0 15px 0;
+    font-size: 28px;
+    font-weight: normal;
+    color: #0084a9;
+    line-height: normal;
+}
+
+h2, .heading-2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #0084a9;
+    line-height: normal;
+}
 </style>
+
 </head>
 <body class=" Home">
     
@@ -560,6 +574,381 @@ body {
 </li>
 
     <li>
+        <a href="/applications">Applications
+                <span class="toggle"></span>   
+
+        </a>
+            <ul>
+    <li>
+        <a href="https://sciexdiagnostics.com/">Clinical Diagnostics
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/clinical-research">Clinical Research
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/environmental-testing">Environmental Testing
+                <span class="toggle"></span>   
+
+        </a>
+            <ul>
+    <li>
+        <a href="/applications/environmental-testing/agrochemical-and-crop-science">Agrochemical and Crop Science
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/environmental-testing/contaminants-of-emerging-concern">Contaminants of Emerging Concern
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/environmental-testing/drinking-water-testing">Drinking Water Testing
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/environmental-testing/environmental-health-analysis">Environmental Health Analysis
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/environmental-testing/soil-and-biota-analysis">Soil and Biota Analysis
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/environmental-testing/unknown-surveillance">Unknown Surveillance
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/environmental-testing/water-quality-testing">Water Quality Testing
+
+        </a>
+
+    </li>
+            </ul>
+
+    </li>
+    <li>
+        <a href="/applications/food-and-beverage-testing">Food and Beverage Testing
+                <span class="toggle"></span>   
+
+        </a>
+            <ul>
+    <li>
+        <a href="/applications/food-and-beverage-testing/antibiotic-testing">Antibiotic Testing
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/food-and-beverage-testing/chemical-adulterant-analysis">Chemical Adulterant Analysis
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/food-and-beverage-testing/food-allergens">Food Allergens
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/food-and-beverage-testing/food-fraud-analysis">Food Fraud Analysis
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/food-and-beverage-testing/ingredient-analysis">Ingredient Analysis
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/food-and-beverage-testing/mycotoxin-and-natural-toxin-testing">Mycotoxin &amp; Natural Toxin Testing
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/food-and-beverage-testing/packaging-and-food-contact-substance-analysis">Packaging &amp; Food Contact Substance Analysis
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/food-and-beverage-testing/pesticide-testing">Pesticide Testing
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/food-and-beverage-testing/unknown-contaminant-screening">Unknown Contaminant Screening
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/food-and-beverage-testing/vitamin-nutritional-analysis">Vitamin Nutritional Analysis
+
+        </a>
+
+    </li>
+            </ul>
+
+    </li>
+    <li>
+        <a href="/applications/forensics-testing">Forensics Testing
+                <span class="toggle"></span>   
+
+        </a>
+            <ul>
+    <li>
+        <a href="/applications/forensics-testing/forensic-drug-testing">Forensic Drug Testing
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/forensics-testing/designer-drug-testing">Designer Drug Testing
+
+        </a>
+
+    </li>
+            </ul>
+
+    </li>
+    <li>
+        <a href="/applications/life-science-research">Life Science Research
+                <span class="toggle"></span>   
+
+        </a>
+            <ul>
+    <li>
+        <a href="/applications/life-science-research/proteomics">Proteomics
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/life-science-research/lipidomics">Lipidomics
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/life-science-research/metabolomics">Metabolomics
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/life-science-research/genomics">Genomics
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/life-science-research/oneomics">OneOmics
+
+        </a>
+
+    </li>
+            </ul>
+
+    </li>
+    <li>
+        <a href="/applications/pharma-and-biopharma">Pharma and Biopharma
+                <span class="toggle"></span>   
+
+        </a>
+            <ul>
+    <li>
+        <a href="/applications/pharma-and-biopharma/adme-and-metabolite-identification">ADME and Metabolite Identification
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/pharma-and-biopharma/bioanalysis">Bioanalysis
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/pharma-and-biopharma/biologics-characterization">Biologics Characterization
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/applications/pharma-and-biopharma/drug-product-impurity-profiling">Drug Product Impurity Profiling
+
+        </a>
+
+    </li>
+            </ul>
+
+    </li>
+            </ul>
+
+    </li>
+    <li>
+        <a href="/education">Education
+                <span class="toggle"></span>   
+
+        </a>
+            <ul>
+    <li>
+        <a href="/education/training-calendar">Training Calendar
+                <span class="toggle"></span>   
+
+        </a>
+            <ul>
+    <li>
+        <a href="http://sciex.com.cn/x65681.xml">China
+
+        </a>
+
+    </li>
+    <li>
+        <a href="https://sciex.com/education/training-calendar?region=Europe">Europe
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/education/training-calendar/germany-ce-courses">Germany CE Courses
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/education/training-calendar/india">India
+
+        </a>
+
+    </li>
+    <li>
+        <a href="http://sciex.jp/x64085.xml">Japan
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/education/training-calendar/korea">Korea
+
+        </a>
+
+    </li>
+    <li>
+        <a href="https://sciex.com/education/training-calendar?region=North%20America">North America
+
+        </a>
+
+    </li>
+            </ul>
+
+    </li>
+    <li>
+        <a href="https://sciex.com/support/training-front/course-catalog">SCIEXUniversity Catalog
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/education/customer-site-training">Customer Site Training
+                <span class="toggle"></span>   
+
+        </a>
+            <ul>
+    <li>
+        <a href="/education/customer-site-training/application-scientist-support">Application Scientist Support
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/education/customer-site-training/basic-ms-operation-and-maintenance-training">Basic MS Operation and Maintenance Training
+
+        </a>
+
+    </li>
+            </ul>
+
+    </li>
+    <li>
+        <a href="/education/grant-support">Grant Support
+                <span class="toggle"></span>   
+
+        </a>
+            <ul>
+    <li>
+        <a href="/education/grant-support/academic-partnership">academic partnership
+
+        </a>
+
+    </li>
+            </ul>
+
+    </li>
+    <li>
+        <a href="/education/innovation-advisory-board">Innovation Advisory Board
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/education/newsletters">Newsletters
+                <span class="toggle"></span>   
+
+        </a>
+            <ul>
+    <li>
+        <a href="/education/newsletters/mass-spectator-issues">Mass Spectator Issues
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/education/newsletters/food-testing-issues">Food Testing Issues
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/education/newsletters/environmental-and-industrial-testing-issues">Environmental &amp; Industrial Testing Issues
+
+        </a>
+
+    </li>
+    <li>
+        <a href="/education/newsletters/swath-acquisition-enews">SWATH Acquisition eNews
+
+        </a>
+
+    </li>
+            </ul>
+
+    </li>
+            </ul>
+
+    </li>
+    <li>
         <a href="/products">Products
                 <span class="toggle"></span>   
 
@@ -571,12 +960,6 @@ body {
 
         </a>
             <ul>
-    <li>
-        <a href="/products/integrated-solutions/bioba-solution">BioBA Solution
-
-        </a>
-
-    </li>
     <li>
         <a href="/products/integrated-solutions/biotransform-solution">Biotransform Solution
 
@@ -983,402 +1366,6 @@ body {
 
     </li>
     <li>
-        <a href="/technology">Technology
-                <span class="toggle"></span>   
-
-        </a>
-            <ul>
-    <li>
-        <a href="/technology/microflow-technology">Microflow Technology
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/technology/swath-acquisition">SWATH-Acquisition 
-
-        </a>
-
-    </li>
-            </ul>
-
-    </li>
-    <li>
-        <a href="/applications">Applications
-                <span class="toggle"></span>   
-
-        </a>
-            <ul>
-    <li>
-        <a href="https://sciexdiagnostics.com/">Clinical Diagnostics
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/clinical-research">Clinical Research
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/environmental-testing">Environmental Testing
-                <span class="toggle"></span>   
-
-        </a>
-            <ul>
-    <li>
-        <a href="/applications/environmental-testing/agrochemical-and-crop-science">Agrochemical and Crop Science
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/environmental-testing/contaminants-of-emerging-concern">Contaminants of Emerging Concern
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/environmental-testing/drinking-water-testing">Drinking Water Testing
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/environmental-testing/environmental-health-analysis">Environmental Health Analysis
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/environmental-testing/soil-and-biota-analysis">Soil and Biota Analysis
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/environmental-testing/unknown-surveillance">Unknown Surveillance
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/environmental-testing/water-quality-testing">Water Quality Testing
-
-        </a>
-
-    </li>
-            </ul>
-
-    </li>
-    <li>
-        <a href="/applications/food-and-beverage-testing">Food and Beverage Testing
-                <span class="toggle"></span>   
-
-        </a>
-            <ul>
-    <li>
-        <a href="/applications/food-and-beverage-testing/antibiotic-testing">Antibiotic Testing
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/food-and-beverage-testing/chemical-adulterant-analysis">Chemical Adulterant Analysis
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/food-and-beverage-testing/food-allergens">Food Allergens
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/food-and-beverage-testing/food-fraud-analysis">Food Fraud Analysis
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/food-and-beverage-testing/ingredient-analysis">Ingredient Analysis
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/food-and-beverage-testing/mycotoxin-and-natural-toxin-testing">Mycotoxin &amp; Natural Toxin Testing
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/food-and-beverage-testing/packaging-and-food-contact-substance-analysis">Packaging &amp; Food Contact Substance Analysis
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/food-and-beverage-testing/pesticide-testing">Pesticide Testing
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/food-and-beverage-testing/unknown-contaminant-screening">Unknown Contaminant Screening
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/food-and-beverage-testing/vitamin-nutritional-analysis">Vitamin Nutritional Analysis
-
-        </a>
-
-    </li>
-            </ul>
-
-    </li>
-    <li>
-        <a href="/applications/forensics-testing">Forensics Testing
-                <span class="toggle"></span>   
-
-        </a>
-            <ul>
-    <li>
-        <a href="/applications/forensics-testing/forensic-drug-testing">Forensic Drug Testing
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/forensics-testing/designer-drug-testing">Designer Drug Testing
-
-        </a>
-
-    </li>
-            </ul>
-
-    </li>
-    <li>
-        <a href="/applications/life-science-research">Life Science Research
-                <span class="toggle"></span>   
-
-        </a>
-            <ul>
-    <li>
-        <a href="/applications/life-science-research/proteomics">Proteomics
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/life-science-research/lipidomics">Lipidomics
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/life-science-research/metabolomics">Metabolomics
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/life-science-research/genomics">Genomics
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/life-science-research/oneomics">OneOmics
-
-        </a>
-
-    </li>
-            </ul>
-
-    </li>
-    <li>
-        <a href="/applications/pharma-and-biopharma">Pharma and Biopharma
-                <span class="toggle"></span>   
-
-        </a>
-            <ul>
-    <li>
-        <a href="/applications/pharma-and-biopharma/adme-and-metabolite-identification">ADME and Metabolite Identification
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/pharma-and-biopharma/bioanalysis">Bioanalysis
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/pharma-and-biopharma/biologics-characterization">Biologics Characterization
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/applications/pharma-and-biopharma/drug-product-impurity-profiling">Drug Product Impurity Profiling
-
-        </a>
-
-    </li>
-            </ul>
-
-    </li>
-            </ul>
-
-    </li>
-    <li>
-        <a href="/education">Education
-                <span class="toggle"></span>   
-
-        </a>
-            <ul>
-    <li>
-        <a href="/education/training-calendar">Training Calendar
-                <span class="toggle"></span>   
-
-        </a>
-            <ul>
-    <li>
-        <a href="http://sciex.com.cn/x65681.xml">China
-
-        </a>
-
-    </li>
-    <li>
-        <a href="https://sciex.com/education/training-calendar?region=Europe">Europe
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/education/training-calendar/germany-ce-courses">Germany CE Courses
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/education/training-calendar/india">India
-
-        </a>
-
-    </li>
-    <li>
-        <a href="http://sciex.jp/x64085.xml">Japan
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/education/training-calendar/korea">Korea
-
-        </a>
-
-    </li>
-    <li>
-        <a href="https://sciex.com/education/training-calendar?region=North%20America">North America
-
-        </a>
-
-    </li>
-            </ul>
-
-    </li>
-    <li>
-        <a href="https://sciex.com/support/training-front/course-catalog">SCIEXUniversity Catalog
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/education/customer-site-training">Customer Site Training
-                <span class="toggle"></span>   
-
-        </a>
-            <ul>
-    <li>
-        <a href="/education/customer-site-training/application-scientist-support">Application Scientist Support
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/education/customer-site-training/basic-ms-operation-and-maintenance-training">Basic MS Operation and Maintenance Training
-
-        </a>
-
-    </li>
-            </ul>
-
-    </li>
-    <li>
-        <a href="/education/grant-support">Grant Support
-                <span class="toggle"></span>   
-
-        </a>
-            <ul>
-    <li>
-        <a href="/education/grant-support/academic-partnership">academic partnership
-
-        </a>
-
-    </li>
-            </ul>
-
-    </li>
-    <li>
-        <a href="/education/innovation-advisory-board">Innovation Advisory Board
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/education/newsletters">Newsletters
-                <span class="toggle"></span>   
-
-        </a>
-            <ul>
-    <li>
-        <a href="/education/newsletters/mass-spectator-issues">Mass Spectator Issues
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/education/newsletters/food-testing-issues">Food Testing Issues
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/education/newsletters/environmental-and-industrial-testing-issues">Environmental &amp; Industrial Testing Issues
-
-        </a>
-
-    </li>
-    <li>
-        <a href="/education/newsletters/swath-acquisition-enews">SWATH Acquisition eNews
-
-        </a>
-
-    </li>
-            </ul>
-
-    </li>
-            </ul>
-
-    </li>
-    <li>
         <a href="/support">Support
                 <span class="toggle"></span>   
 
@@ -1526,12 +1513,6 @@ body {
 
     </li>
     <li>
-        <a href="/about-us">About Us
-                <span class="toggle"></span>   
-
-        </a>
-            <ul>
-    <li>
         <a href="https://sciex.com/community">Community
                 <span class="toggle"></span>   
 
@@ -1545,20 +1526,47 @@ body {
     </li>
     <li>
         <a href="https://sciex.com/community/entity/32">Food &amp; Beverage Community
+                <span class="toggle"></span>   
 
         </a>
+            <ul>
+    <li>
+        <a href="http://sciex.com/community/entity/34">Discussions
+
+        </a>
+
+    </li>
+            </ul>
 
     </li>
     <li>
         <a href="https://sciex.com/community/entity/2">Omics Community
+                <span class="toggle"></span>   
+
+        </a>
+            <ul>
+    <li>
+        <a href="http://sciex.com/community/entity/41">Proteomics Subcommunity
 
         </a>
 
     </li>
+            </ul>
+
+    </li>
     <li>
         <a href="https://sciex.com/community/entity/35">Support Community
+                <span class="toggle"></span>   
 
         </a>
+            <ul>
+    <li>
+        <a href="http://sciex.com/community/entity/37">FAQs and Discussions
+
+        </a>
+
+    </li>
+            </ul>
 
     </li>
     <li>
@@ -1570,6 +1578,12 @@ body {
             </ul>
 
     </li>
+    <li>
+        <a href="/about-us">About Us
+                <span class="toggle"></span>   
+
+        </a>
+            <ul>
     <li>
         <a href="/about-us/contact-us">Contact Us
 
@@ -1728,27 +1742,19 @@ For research use only. Not for use in diagnostic procedures.
         </div>
     </header>
 
-
-<!-- old nav bar -->
-
- <!-- <nav id="nav" class="section">
+    <nav id="nav" class="section">
         <div class="clearfix">
-
-             <ul class="left menu">
-                        <li class="">    <a href="/products"    title="Products">
-        Products
-    </a>
-</li>
-                        <li class="">    <a href="/technology"    title="Technology">
-        Technology
-    </a>
-</li>
+          <!--   <ul class="left menu">
                         <li class="">    <a href="/applications"    title="Applications">
         Applications
     </a>
 </li>
                         <li class="">    <a href="/education"    title="Education">
         Education
+    </a>
+</li>
+                        <li class="">    <a href="/products"    title="Products">
+        Products
     </a>
 </li>
                         <li class="">    <a href="/support"    title="Support">
@@ -1759,49 +1765,32 @@ For research use only. Not for use in diagnostic procedures.
         Events
     </a>
 </li>
+                        <li class="">    <a href="https://sciex.com/community"    title="Community">
+        Community
+    </a>
+</li>
                         <li class="">    <a href="/about-us"    title="About Us">
         About Us
     </a>
 </li>
-            </ul>
-            <div class="right search">
-                <div>
-                    <div class="search-form">
-                        <form action="/search-results" method="get" class="nohtml">
-                            <input type="text" name="term" placeholder="search our site" />
-                            <input type="submit" value="Search" />
-                        </form>
-                    </div>
-                </div>
-            </div> 
-
-        </div>
-    </nav>  -->
+            </ul> -->
 
 
-
-<!-- end old nav bar -->
-
-
-<!--================= start mega menu ===========================-->
-
-
- 
-<!-- <div class="xcontainer-fluid fixed-container"> -->
-  <nav xid="nav" class="navbar navbar-default section">
+  <nav class="navbar navbar-default">
    <!--  <div class="navbar-header">
       <a class="navbar-brand" href="#">SCIEX</a>
     </div> -->
 
     <div class="collapse navbar-collapse js-navbar-collapse">
-      <ul class="nav navbar-nav">
+
+            <ul class="nav navbar-nav">
 
        <!-- start Products item -->
 
         <li class="dropdown mega-dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <!-- <span class="glyphicon glyphicon-chevron-down pull-right"></span> --></a>
 
-          <ul class="dropdown-menu mega-dropdown-menu row">
+          <ul class="dropdown-menu mega-dropdown-menu row" style="display: none;">
            
             <li class="col-sm-3">
               <ul>
@@ -1812,7 +1801,7 @@ For research use only. Not for use in diagnostic procedures.
                 <li><a href="#">OneOmics</a></li>
                 <li><a href="#">The Lipidizer Platform</a></li>
                 <li class="divider"></li>
-                <li class="dropdown-header">Capillary Electrophoresis <br /> Instruments</li>
+                <li class="dropdown-header">Capillary Electrophoresis Instruments</li>
                 <li><a href="#">CESI 8000 High Performance Separation-ESI Module</a></li>
                 <li><a href="#">P/ACE MDQ Plus</a></li>
                 <li><a href="#">PA 800 Plus Pharmaceutical Analysis System</a></li>
@@ -1821,7 +1810,7 @@ For research use only. Not for use in diagnostic procedures.
                 <li class="dropdown-header">Diagnostic Instruments</li>
                 <li><a href="#">Instruments</a></li>
                 <li><a href="#">Assays</a></li>
-                <li><a href="#">Enhancements & Options</a></li>
+                <li><a href="#">Enhancements &amp; Options</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">HPLC Products</li>
                 <li><a href="#">Analytical Flow LC</a></li>
@@ -1918,22 +1907,22 @@ For research use only. Not for use in diagnostic procedures.
                 <li class="dropdown-header">Shop the SCIEX Store</li>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
-                    <div class="item active">
-                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Software" class="img-responsive" alt="product 1"></a>
+                    <div class="item">
+                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&amp;text=New+Software" class="img-responsive" alt="product 1"></a>
                       <h4><small>Software</small></h4>
                       <button class="btn btn-primary" type="button">Buy Now</button>
                       
                     </div>
                     <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Parts" class="img-responsive" alt="product 2"></a>
-                      <h4><small>Parts & Accessories</small></h4>
+                    <div class="item active">
+                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&amp;text=New+Parts" class="img-responsive" alt="product 2"></a>
+                      <h4><small>Parts &amp; Accessories</small></h4>
                       <button class="btn btn-primary" type="button">Buy Now</button>
                       
                     </div>
                     <!-- End Item -->
                     <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Clearance" class="img-responsive" alt="product 3"></a>
+                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&amp;text=New+Clearance" class="img-responsive" alt="product 3"></a>
                       <h4><small>Clearance</small></h4>
                       <button class="btn btn-primary" type="button">Buy Now</button>
                       
@@ -1960,7 +1949,7 @@ For research use only. Not for use in diagnostic procedures.
         <li class="dropdown mega-dropdown-technology">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technology <!-- <span class="glyphicon glyphicon-chevron-down pull-right"></span> --></a>
 
-          <ul class="dropdown-menu mega-dropdown-menu-technology row">
+          <ul class="dropdown-menu mega-dropdown-menu-technology row" style="display: none; opacity: 1;">
            
             <li class="col-sm-3">
               <ul>
@@ -1989,8 +1978,8 @@ For research use only. Not for use in diagnostic procedures.
                 <li><a href="#">Food Allergens</a></li>
                 <li><a href="#">Food Fraud Analysis</a></li>
                 <li><a href="#">Ingredient Analysis</a></li>
-                <li><a href="#">Mycotoxin & Natural Toxin Testing</a></li>
-                <li><a href="#">Packaging & Food Contact Substance Analysis</a></li>
+                <li><a href="#">Mycotoxin &amp; Natural Toxin Testing</a></li>
+                <li><a href="#">Packaging &amp; Food Contact Substance Analysis</a></li>
                 <li><a href="#">Pesticide Testing</a></li>
                 <li><a href="#">Unknown Contaminant Screening</a></li>
                 <li><a href="#">Vitamin Nutritional Analysis</a></li>
@@ -2036,22 +2025,22 @@ For research use only. Not for use in diagnostic procedures.
                 <li class="dropdown-header">Shop the SCIEX Store</li>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
-                    <div class="item active">
-                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Software" class="img-responsive" alt="product 1"></a>
+                    <div class="item">
+                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&amp;text=New+Software" class="img-responsive" alt="product 1"></a>
                       <h4><small>Software</small></h4>
                       <button class="btn btn-primary" type="button">Buy Now</button>
                       
                     </div>
                     <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Parts" class="img-responsive" alt="product 2"></a>
-                      <h4><small>Parts & Accessories</small></h4>
+                    <div class="item active">
+                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&amp;text=New+Parts" class="img-responsive" alt="product 2"></a>
+                      <h4><small>Parts &amp; Accessories</small></h4>
                       <button class="btn btn-primary" type="button">Buy Now</button>
                       
                     </div>
                     <!-- End Item -->
                     <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Clearance" class="img-responsive" alt="product 3"></a>
+                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&amp;text=New+Clearance" class="img-responsive" alt="product 3"></a>
                       <h4><small>Clearance</small></h4>
                       <button class="btn btn-primary" type="button">Buy Now</button>
                       
@@ -2079,7 +2068,7 @@ For research use only. Not for use in diagnostic procedures.
         <li class="dropdown mega-dropdown-applications">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Applications <!-- <span class="glyphicon glyphicon-chevron-down pull-right"></span> --></a>
 
-          <ul class="dropdown-menu mega-dropdown-menu-applications row">
+          <ul class="dropdown-menu mega-dropdown-menu-applications row" style="display: none; opacity: 1;">
            
             <li class="col-sm-3">
               <ul>
@@ -2108,8 +2097,8 @@ For research use only. Not for use in diagnostic procedures.
                 <li><a href="#">Food Allergens</a></li>
                 <li><a href="#">Food Fraud Analysis</a></li>
                 <li><a href="#">Ingredient Analysis</a></li>
-                <li><a href="#">Mycotoxin & Natural Toxin Testing</a></li>
-                <li><a href="#">Packaging & Food Contact Substance Analysis</a></li>
+                <li><a href="#">Mycotoxin &amp; Natural Toxin Testing</a></li>
+                <li><a href="#">Packaging &amp; Food Contact Substance Analysis</a></li>
                 <li><a href="#">Pesticide Testing</a></li>
                 <li><a href="#">Unknown Contaminant Screening</a></li>
                 <li><a href="#">Vitamin Nutritional Analysis</a></li>
@@ -2155,22 +2144,22 @@ For research use only. Not for use in diagnostic procedures.
                 <li class="dropdown-header">Shop the SCIEX Store</li>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
-                    <div class="item active">
-                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Software" class="img-responsive" alt="product 1"></a>
+                    <div class="item">
+                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&amp;text=New+Software" class="img-responsive" alt="product 1"></a>
                       <h4><small>Software</small></h4>
                       <button class="btn btn-primary" type="button">Buy Now</button>
                       
                     </div>
                     <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Parts" class="img-responsive" alt="product 2"></a>
-                      <h4><small>Parts & Accessories</small></h4>
+                    <div class="item active">
+                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&amp;text=New+Parts" class="img-responsive" alt="product 2"></a>
+                      <h4><small>Parts &amp; Accessories</small></h4>
                       <button class="btn btn-primary" type="button">Buy Now</button>
                       
                     </div>
                     <!-- End Item -->
                     <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Clearance" class="img-responsive" alt="product 3"></a>
+                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&amp;text=New+Clearance" class="img-responsive" alt="product 3"></a>
                       <h4><small>Clearance</small></h4>
                       <button class="btn btn-primary" type="button">Buy Now</button>
                       
@@ -2198,39 +2187,39 @@ For research use only. Not for use in diagnostic procedures.
   <li class="dropdown mega-dropdown-diagnostics">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Diagnostics <!-- <span class="glyphicon glyphicon-chevron-down pull-right"></span> --></a>
 
-          <ul class="dropdown-menu mega-dropdown-menu-diagnostics row">
+          <ul class="dropdown-menu mega-dropdown-menu-diagnostics row" style="display: none; opacity: 1;">
             <li class="col-sm-3">
               <ul>
                 <li class="dropdown-header">SCIEXUniversity</li>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
+                    <div class="item">
+                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&amp;text=New+Course" class="img-responsive" alt="product 1"></a>
+                      <h4><small>Analyst® Software - Acquire</small></h4>
+                      <button class="btn btn-primary" type="button">Enroll</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                    </div>
+                    <!-- End Item -->
                     <div class="item active">
-                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Course" class="img-responsive" alt="product 1"></a>
+                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&amp;text=New+Course" class="img-responsive" alt="product 2"></a>
                       <h4><small>Analyst® Software - Acquire</small></h4>
                       <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                     </div>
                     <!-- End Item -->
                     <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Course" class="img-responsive" alt="product 2"></a>
+                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&amp;text=New+Course" class="img-responsive" alt="product 3"></a>
                       <h4><small>Analyst® Software - Acquire</small></h4>
                       <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Course" class="img-responsive" alt="product 3"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                     </div>
                     <!-- End Item -->
                   </div>
                   <!-- End Carousel Inner -->
                 </div>
                 <!-- /.carousel -->
-                <!-- <li class="divider"></li>
-                <li><a href="#">Diagnostics  <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li> -->
+                <li class="divider"></li>
+                <li><a href="#">Diagnostics <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
               </ul>
             </li>
             <li class="col-sm-3">
@@ -2291,25 +2280,25 @@ For research use only. Not for use in diagnostic procedures.
                 <li class="dropdown-header">SCIEXUniversity</li>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
+                    <div class="item">
+                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&amp;text=New+Course" class="img-responsive" alt="product 1"></a>
+                      <h4><small>Analyst® Software - Acquire</small></h4>
+                      <button class="btn btn-primary" type="button">Enroll</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                    </div>
+                    <!-- End Item -->
                     <div class="item active">
-                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Course" class="img-responsive" alt="product 1"></a>
+                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&amp;text=New+Course" class="img-responsive" alt="product 2"></a>
                       <h4><small>Analyst® Software - Acquire</small></h4>
                       <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                     </div>
                     <!-- End Item -->
                     <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Course" class="img-responsive" alt="product 2"></a>
+                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&amp;text=New+Course" class="img-responsive" alt="product 3"></a>
                       <h4><small>Analyst® Software - Acquire</small></h4>
                       <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Course" class="img-responsive" alt="product 3"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                     </div>
                     <!-- End Item -->
                   </div>
@@ -2317,7 +2306,7 @@ For research use only. Not for use in diagnostic procedures.
                 </div>
                 <!-- /.carousel -->
                 <li class="divider"></li>
-                <li><a href="#">View Course Catalog  <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">View Course Catalog <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
               </ul>
             </li>
             <li class="col-sm-3">
@@ -2376,25 +2365,25 @@ For research use only. Not for use in diagnostic procedures.
                 <li class="dropdown-header">SCIEXUniversity</li>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
+                    <div class="item">
+                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&amp;text=New+Course" class="img-responsive" alt="product 1"></a>
+                      <h4><small>Analyst® Software - Acquire</small></h4>
+                      <button class="btn btn-primary" type="button">Enroll</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                    </div>
+                    <!-- End Item -->
                     <div class="item active">
-                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Course" class="img-responsive" alt="product 1"></a>
+                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&amp;text=New+Course" class="img-responsive" alt="product 2"></a>
                       <h4><small>Analyst® Software - Acquire</small></h4>
                       <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                     </div>
                     <!-- End Item -->
                     <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Course" class="img-responsive" alt="product 2"></a>
+                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&amp;text=New+Course" class="img-responsive" alt="product 3"></a>
                       <h4><small>Analyst® Software - Acquire</small></h4>
                       <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Course" class="img-responsive" alt="product 3"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                     </div>
                     <!-- End Item -->
                   </div>
@@ -2402,7 +2391,7 @@ For research use only. Not for use in diagnostic procedures.
                 </div>
                 <!-- /.carousel -->
                 <li class="divider"></li>
-                <li><a href="#">View Course Catalog  <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">View Course Catalog <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
               </ul>
             </li>
             <li class="col-sm-3">
@@ -2464,25 +2453,25 @@ For research use only. Not for use in diagnostic procedures.
                 <li class="dropdown-header">SCIEXUniversity</li>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
+                    <div class="item">
+                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&amp;text=New+Course" class="img-responsive" alt="product 1"></a>
+                      <h4><small>Analyst® Software - Acquire</small></h4>
+                      <button class="btn btn-primary" type="button">Enroll</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                    </div>
+                    <!-- End Item -->
                     <div class="item active">
-                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Course" class="img-responsive" alt="product 1"></a>
+                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&amp;text=New+Course" class="img-responsive" alt="product 2"></a>
                       <h4><small>Analyst® Software - Acquire</small></h4>
                       <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                     </div>
                     <!-- End Item -->
                     <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Course" class="img-responsive" alt="product 2"></a>
+                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&amp;text=New+Course" class="img-responsive" alt="product 3"></a>
                       <h4><small>Analyst® Software - Acquire</small></h4>
                       <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Course" class="img-responsive" alt="product 3"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                     </div>
                     <!-- End Item -->
                   </div>
@@ -2490,7 +2479,7 @@ For research use only. Not for use in diagnostic procedures.
                 </div>
                 <!-- /.carousel -->
                 <li class="divider"></li>
-                <li><a href="#">View Course Catalog  <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">View Course Catalog <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
               </ul>
             </li>
             <li class="col-sm-3">
@@ -2546,25 +2535,25 @@ For research use only. Not for use in diagnostic procedures.
                 <li class="dropdown-header">SCIEXUniversity</li>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
+                    <div class="item">
+                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&amp;text=New+Course" class="img-responsive" alt="product 1"></a>
+                      <h4><small>Analyst® Software - Acquire</small></h4>
+                      <button class="btn btn-primary" type="button">Enroll</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                    </div>
+                    <!-- End Item -->
                     <div class="item active">
-                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Course" class="img-responsive" alt="product 1"></a>
+                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&amp;text=New+Course" class="img-responsive" alt="product 2"></a>
                       <h4><small>Analyst® Software - Acquire</small></h4>
                       <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                     </div>
                     <!-- End Item -->
                     <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Course" class="img-responsive" alt="product 2"></a>
+                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&amp;text=New+Course" class="img-responsive" alt="product 3"></a>
                       <h4><small>Analyst® Software - Acquire</small></h4>
                       <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Course" class="img-responsive" alt="product 3"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
+                      <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                     </div>
                     <!-- End Item -->
                   </div>
@@ -2572,7 +2561,7 @@ For research use only. Not for use in diagnostic procedures.
                 </div>
                 <!-- /.carousel -->
                 <li class="divider"></li>
-                <li><a href="#">View Course Catalog  <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">View Course Catalog <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
               </ul>
             </li>
             <li class="col-sm-3">
@@ -2622,26 +2611,25 @@ For research use only. Not for use in diagnostic procedures.
         <!-- end of nav items -->
 
 
-
-
-
       </ul>
 
-    </div>
-    <!-- /.nav-collapse -->
-  </nav>
-<!-- </div> -->
+</div>
+</div>
 
 
-
-
-
-
-
-<!--================= end mega menu ===========================-->
-
-
-
+<!-- end mega menu -->
+           <!--  <div class="right search">
+                <div>
+                    <div class="search-form">
+                        <form action="/search-results" method="get" class="nohtml">
+                            <input type="text" name="term" placeholder="search our site" />
+                            <input type="submit" value="Search" />
+                        </form>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </nav>
 
 <section id="body" class="section">
     <div>
@@ -2776,9 +2764,9 @@ For research use only. Not for use in diagnostic procedures.
 
             <div class="container-fluid">
                 <h2 class="quotes"><span class="typeBg"><span class="type">.</span></span> <span class="details"><a href="#" ><span class="detailsText">.</span></a></span> <span class="CTA"><a href="#" ><span class="CTAText">.</span></a></span></h2>
-<h1>Experience the Power of Mass Spectrometry</h1>
+<h1 class="home">Experience the Power of Mass Spectrometry</h1>
 <h2>Innovative Solutions for all Your Mass Spec Challenges</h2>
-<p>As a global leader in pioneering mass spectrometry-based technologies, SCIEX has been helping scientists and lab analysts improve the world in which we live for over 40 years. Since successfully commercializing the first triple quadrupole mass spectrometer in 1981, SCIEX has built a reputation of trust among scientists who need to make the right decisions, quickly. Researchers have come to rely on our ingenuity in LC-MS and CE, as well as our experience in software and support from routine testing to the most pressing analytical challenges. Whether you specialize in <a href="/applications" >drug discovery and development, clinical research, forensics, food and environmental testing</a>, SCIEX remains steadfast in our mission to help improve the world in which we live. From our labs to yours, together, we can help see mass spectrometry&mdash;and the world&mdash;differently.</p>
+<p>As a global leader in pioneering mass spectrometry-based technologies, SCIEX has been helping scientists and lab analysts improve the world in which we live for over 40 years. Since successfully commercializing the first triple quadrupole mass spectrometer in 1981, SCIEX has built a reputation of trust among scientists who need to make the right decisions, quickly. Researchers have come to rely on our ingenuity in LC-MS and CE, as well as our experience in software and support from routine testing to the most pressing analytical challenges. Whether you specialize in <a href="/applications" >drug discovery and development, clinical research, forensics, food and environmental testing</a>, SCIEX remains steadfast in our mission to help improve the world in which we live. From our labs to yours, together, we can help see mass spectrometry&mdash;and the world&mdash;differently.</p><br>
 <div class="new-section-promo">
 <div class="product-section">
 <p><a href="https://sciex.com/community/"><img alt="communities" height="200" src="https://images.sciex.com/Community+Images/Communities_1140x200.jpg" width="1140" /></a></p>
@@ -3247,7 +3235,7 @@ For research use only. Not for use in diagnostic procedures.
         <h2 class="header">Forgot Password?</h2>
         <div class="shade-box">
             <form class="portal form forgot-password-form" action="/account/ForgotPassword" method="post">
-                <input type="hidden" name="token" value="a770c065ad49bedfd8d45ccd92d525878fe52e95" />
+                <input type="hidden" name="token" value="2dce56f637e1ac36bf29ff40036094919b3c32c0" />
                 <p>Please enter your email address and we'll send you a new password.</p>
                 <p>
                     <input name="email" type="text" placeholder="Email Address" class="required clear-field email">
@@ -3367,7 +3355,6 @@ For research use only. Not for use in diagnostic procedures.
 //$("#nav a[title='Community']").hide();
 </script>
 
-
  <script type="text/javascript">
 
 $(document).ready(function(){
@@ -3378,7 +3365,15 @@ $(document).ready(function(){
     });
 });
 
+
 </script>
+
+
+<!--  <script type="text/javascript">
+   $(document).on('click', '.mega-dropdown', function(e) {
+  e.stopPropagation()
+ })
+ </script>  -->
 
 </body>
 </html>
