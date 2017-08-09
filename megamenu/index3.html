@@ -35,6 +35,11 @@
 
     
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/codesandbox/megamenu/nicemenu.css">
+  <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/codesandbox/megamenu/theme-common.css">
+  <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/codesandbox/megamenu/theme-001.css">
+
     
         <script src="//use.typekit.net/muz8rcx.js" async="async"></script>
         <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
@@ -100,6 +105,17 @@ body {
   color: #404041;
 }
 */
+
+h1, .heading-1 {
+    margin: 0 0 15px 0;
+    font-size: 28px;
+    font-weight: normal;
+    color: #0084a9;
+    line-height: normal;
+    text-align: left;
+}
+
+
 .fixed-container {
     height: inherit;
     max-width: 1400px;
@@ -115,14 +131,14 @@ body {
 
 .navbar-nav>li>.dropdown-menu {
   xmargin-top: 20px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 
 }
 
 .navbar-default .navbar-nav>li>a {
-  width: 142.5px;
-  /*font-weight: bold;*/
+  width: 120px;
+  font-size:17px;
   color:#fff;
   text-align:center;
 }
@@ -134,7 +150,7 @@ body {
 }
 
 .mega-dropdown-menu, .mega-dropdown-menu-technology, .mega-dropdown-menu-applications, .mega-dropdown-menu-diagnostics, .mega-dropdown-menu-education, .mega-dropdown-menu-support, .mega-dropdown-menu-events, .mega-dropdown-menu-aboutus {
-  padding: 20px 0px;
+  /*padding: 20px 0px;*/
   width: 100%;
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -143,84 +159,99 @@ body {
 
 
 .mega-dropdown-menu:after {
-    position: absolute;
+/*    position: absolute;
     display: block;
     content: "";
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
     left: 90px;
-    margin-left: -8px;
+    margin-left: -8px;*/
 }  
 
 
 .mega-dropdown-menu-technology:after {
+    
     position: absolute;
     display: block;
     content: "";
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
-    left: 230px;
+    left: 195px;
     margin-left: -8px;
+
 }  
 
 
 .mega-dropdown-menu-applications:after {
+  
     position: absolute;
     display: block;
     content: "";
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
-    left: 370px;
+    left: 315px;
     margin-left: -8px;
+    z-index: 999;
 }  
 
+
 .mega-dropdown-menu-diagnostics:after {
+  
     position: absolute;
     display: block;
     content: "";
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
-    left: 515px;
+    left: 435px;
     margin-left: -8px;
+    z-index: 999;
 }  
 
 .mega-dropdown-menu-education:after {
+   
     position: absolute;
     display: block;
     content: "";
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
-    left: 655px;
+    left: 555px;
     margin-left: -8px;
+     z-index: 999;
 }  
 
 .mega-dropdown-menu-support:after {
+   
     position: absolute;
     display: block;
     content: "";
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
-    left: 800px;
+    left: 675px;
     margin-left: -8px;
+    z-index: 999;
+
 }  
 
 
-.mega-dropdown-menu-events:after {
+/*.mega-dropdown-menu-events:after {
+ 
     position: absolute;
     display: block;
     content: "";
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
-    left: 940px;
+    left: 830px;
     margin-left: -8px;
-}  
+    z-index: 999;
+
+} */ 
 
 .mega-dropdown-menu-aboutus:after {
     position: absolute;
@@ -229,9 +260,11 @@ body {
     border: solid 8px transparent;
     border-top-color: #00afdb;
     top: -1px;
-    left: 1085px;
+    left: 795px;
     margin-left: -8px;
+    z-index:999;
 }  
+
 .mega-dropdown-menu > li > ul, .mega-dropdown-menu-technology > li > ul,  .mega-dropdown-menu-applications > li > ul, .mega-dropdown-menu-diagnostics  > li > ul, .mega-dropdown-menu-education > li > ul, .mega-dropdown-menu-support > li > ul, .mega-dropdown-menu-events > li > ul, .mega-dropdown-menu-aboutus > li > ul  {
   padding: 0;
   margin: 0;
@@ -268,9 +301,9 @@ body {
 .mega-dropdown-menu-aboutus > li ul > li > a:hover,
 .mega-dropdown-menu-aboutus > li ul > li > a:focus
  {
-  text-decoration: none;
-  color: #444;
-  background-color: #f5f5f5;
+  text-decoration: underline;
+  /*color: #444;
+  background-color: #f5f5f5;*/
 }
 
 .mega-dropdown-menu .dropdown-header, .mega-dropdown-menu-technology .dropdown-header,  .mega-dropdown-menu-applications .dropdown-header,  .mega-dropdown-menu-diagnostics .dropdown-header, .mega-dropdown-menu-education .dropdown-header,  
@@ -340,7 +373,7 @@ body {
 .carousel { position: relative; margin-left: 22px; }
 .form-control, .btn-block { display: block; width: 94%; }
 #master { padding-top: 70px; }
-
+.wide-search { top:122px; }
 </style>
 
 
@@ -436,13 +469,17 @@ body {
      .navbar { display: block; } 
      .navbar-default .navbar-nav>li>a {  width:121px; }
      .mega-dropdown-menu:after { margin-left:-20px; }
-     .mega-dropdown-menu-technology:after { margin-left:-40px; }
-     .mega-dropdown-menu-applications:after { margin-left:-60px; }
-     .mega-dropdown-menu-diagnostics:after {  margin-left:-80px; }
-     .mega-dropdown-menu-education:after { margin-left:-100px; }
-     .mega-dropdown-menu-support:after { margin-left:-125px; }
-     .mega-dropdown-menu-events:after { margin-left:-145px; }
-     .mega-dropdown-menu-aboutus:after { margin-left:-165px; }
+     .mega-dropdown-menu-technology:after { margin-left:-10px; }
+     .mega-dropdown-menu-applications:after { margin-left:-5px; }
+     .mega-dropdown-menu-diagnostics:after {  margin-left:-5px; }
+     .mega-dropdown-menu-education:after { margin-left:-5px; }
+     .mega-dropdown-menu-support:after { margin-left:-5px; }
+    /* .mega-dropdown-menu-events:after { margin-left:-5px; }*/
+     .mega-dropdown-menu-aboutus:after { margin-left:-5px; }
+
+     .nicemenu-sub { width: 800px!important; }
+
+     span.findMore { margin-left:10px; }
 
  }
 
@@ -559,8 +596,50 @@ body {
 .CTA{padding:10px 0px; width:135px;float:right;text-align:left;top:-10px;position:relative;white-space: nowrap; text-overflow: ellipsis; overflow:hidden;display:inline-block;background-color:white;} 
 .CTAText{color:#f99d31;font-weight:400;}
 .details{padding:10px 5px 10px 10px;top:-10px;position:relative;white-space: nowrap; text-overflow: ellipsis; overflow:hidden;display:inline-block;background-color:white;} 
+
+
+/* customize css */
+
+.mega-dropdown-menu { padding-top:10px; padding-bottom:0; }
+.mega-dropdown-menu-applications { padding:0; }
+.navbar-nav>li>.dropdown-menu { margin-top: 11px; }
+.navbar-nav>li>.dropdown-menu { background: #f7f5f8; }
+.dropdown-menu {  border:1px solid #ccc; border-top:0;  /*box-shadow: 7px 7px 3px #D3D3D3;*/  -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777; }
+
+.wrapper { width: 1200px; }
+
+.nicemenu { width: 250px; /*margin-top:-10px; */ }
+.nicemenu-item { background:#00afdb; padding-bottom:5px; /*border-bottom: 1px solid #e0e0e0; */ }
+.nicemen-item:hover { background:#004a65; }
+.nicemenu-item h6 { padding-top:5px;/* xcolor:#428bca; xfont-weight:bold;*/ }
+.nicemenu-item h6:hover { color:#f0f0f0; }
+.nicemenu-sub { width:920px; box-shadow: none; xbackground:#00afdb; background:#f7f5f8; /*z-index: -8;*/ }
+ .default { display:block; /*z-index:-8;*/ }
+/*.nicemenu-item.active, .active { xbackground:#00afdb; background:#fff;  }*/
+.nicemenu-item.active { background:#004a65; }
+.nicemenu-sub h6 {  color: #428bca!important; font-size: 17px; font-weight: bold; line-height: 18px; margin-bottom: 5px;/* margin-top:10px;*/ }
+.nicemenu-sub p a { color:#999!important; }
+
+ul li a.technology { text-align: center; width:200px; margin:0 auto; margin-bottom:20px;}
+.navbar-nav>li>.dropdown-menu { margin-top: 1px; }
+span.right { float:right; }
+p > a { font-size:14px; }
+p > a:hover { text-decoration: none; }
+
+.dropdown-menu { padding:0; }
+
+.btn.orange { margin-top:13px; }
+
+span.findMore { display:inline-block; margin-left:20px; }
+       
+
 </style>
+
 </head>
+
+
 <body class=" Home">
     
 
@@ -1672,26 +1751,16 @@ For research use only. Not for use in diagnostic procedures.
             <div class="tagline">Answers for Science. Knowledge for Life.™</div>
             <div class="links">
                 <ul>
-                        <li class="country">
-                            <a href="#" style="background-image:url('//images.sciex.com/shared/icons/globe.png')">Country/Language</a>
-                            <div class="dropdown">
-                                <form action="#" method="post" onsubmit="window.location.href = $('#country-preference').val(); return false;">
-                                    <label for="country-preference">Select a country</label>
-                                    <div class="custom-select">
-                                        <select id="country-preference" name="country-preference">
-                                                <option value="/">Global</option>
-                                                <option value="http://sciex.com.cn/">中国</option>
-                                                <option value="http://sciex.jp/">日本</option>
-                                                <option value="http://www.absciex-korea.com/">한국</option>
-
-                                        </select>
-                                    </div>
-                                    
-                                    <div class="footer clearfix">
-                                        <button>Submit</button>
-                                    </div>
-                                </form>
-                            </div>
+                        <li class="search-toggle">
+                            <a class="open-search" href="#" style="background-image:url('//images.sciex.com/shared/icons/search.png')">Search</a>
+                            <a class="close-search" href="#" style="background-image:url('//images.sciex.com/shared/icons/search.png')">Search</a>
+                        </li>
+                        <li class="country global-toggle">
+                            <a class="open-global" href="#" style="background-image:url('//images.sciex.com/shared/icons/globe.png')">Country [Change]</a>
+                            <a class="close-global" href="#" style="background-image:url('//images.sciex.com/shared/icons/globe.png')">Country [Change]</a>
+                        </li>
+                        <li class="country global-link">
+                            <a href="/choose-country?returnUrl=https%3a%2f%2fsciex.com%2f" style="background-image:url('//images.sciex.com/shared/icons/globe.png')">Country [Change]</a>
                         </li>
                         <li class="shop"><a href="https://store.sciex.com/" style="background-image:url('//images.sciex.com/shared/icons/cart.png')">Shop</a></li>
                         <li class="login">
@@ -1722,6 +1791,193 @@ For research use only. Not for use in diagnostic procedures.
 
                 </ul>
             </div>
+            <div class="global-dropdown">
+                <div class="content">
+                    <!-- p>View the <a href="/choose-country" >full list of countries</a></p -->
+                </div>
+                <div class="column-wrap country-links">
+                        <div class="column ">
+                                <h4>North America</h4>
+    <ul>
+            <li><a href="#" data-country="CA" data-link="" >Canada</a></li>
+            <li><a href="#" data-country="MX" data-link="" >Mexico</a></li>
+            <li><a href="#" data-country="US" data-link="https://sciex.com/" class="on">United States</a></li>
+
+    </ul>   
+                                <div class="spacer"></div>
+                                <h4>South America</h4>
+    <ul>
+            <li><a href="#" data-country="AR" data-link="" >Argentina</a></li>
+            <li><a href="#" data-country="BR" data-link="" >Brazil</a></li>
+            <li><a href="#" data-country="CL" data-link="" >Chile</a></li>
+            <li><a href="#" data-country="CO" data-link="" >Colombia</a></li>
+            <li><a href="#" data-country="CR" data-link="" >Costa Rica</a></li>
+            <li><a href="#" data-country="EC" data-link="" >Ecuador</a></li>
+            <li><a href="#" data-country="SV" data-link="" >El Salvador</a></li>
+            <li><a href="#" data-country="GT" data-link="" >Guatemala</a></li>
+            <li><a href="#" data-country="PE" data-link="" >Peru</a></li>
+            <li><a href="#" data-country="UY" data-link="" >Uruguay</a></li>
+            <li><a href="#" data-country="VE" data-link="" >Venezuela</a></li>
+
+    </ul>   
+                                <div class="spacer"></div>
+
+                        </div>
+                        <div class="column wide">
+                                <h4>Europe</h4>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                            <ul>
+            <li><a href="#" data-country="AL" data-link="" >Albania</a></li>
+            <li><a href="#" data-country="AT" data-link="" >Austria</a></li>
+            <li><a href="#" data-country="BE" data-link="" >Belgium</a></li>
+            <li><a href="#" data-country="BA" data-link="" >Bosnia and Herzegovina</a></li>
+            <li><a href="#" data-country="BG" data-link="" >Bulgaria</a></li>
+            <li><a href="#" data-country="HR" data-link="" >Croatia </a></li>
+            <li><a href="#" data-country="CY" data-link="" >Cyprus</a></li>
+            <li><a href="#" data-country="CZ" data-link="" >Czech Republic</a></li>
+            <li><a href="#" data-country="DK" data-link="" >Denmark</a></li>
+            <li><a href="#" data-country="EE" data-link="" >Estonia</a></li>
+            <li><a href="#" data-country="FI" data-link="" >Finland</a></li>
+            <li><a href="#" data-country="FR" data-link="" >France</a></li>
+            <li><a href="#" data-country="DE" data-link="" >Germany</a></li>
+            <li><a href="#" data-country="GR" data-link="" >Greece</a></li>
+            <li><a href="#" data-country="HU" data-link="" >Hungary</a></li>
+            <li><a href="#" data-country="IE" data-link="" >Ireland</a></li>
+            <li><a href="#" data-country="ES" data-link="" >Spain</a></li>
+            <li><a href="#" data-country="CH" data-link="" >Switzerland</a></li>
+            <li><a href="#" data-country="GB" data-link="" >United Kingdom</a></li>
+
+    </ul>   
+
+                                    </div>
+                                    <div class="col-xs-6">
+                                            <ul>
+            <li><a href="#" data-country="IT" data-link="" >Italy</a></li>
+            <li><a href="#" data-country="LV" data-link="" >Latvia</a></li>
+            <li><a href="#" data-country="LT" data-link="" >Lithuania</a></li>
+            <li><a href="#" data-country="LU" data-link="" >Luxembourg</a></li>
+            <li><a href="#" data-country="MK" data-link="" >Macedonia</a></li>
+            <li><a href="#" data-country="ME" data-link="" >Montenegro</a></li>
+            <li><a href="#" data-country="NL" data-link="" >Netherlands</a></li>
+            <li><a href="#" data-country="NO" data-link="" >Norway</a></li>
+            <li><a href="#" data-country="PL" data-link="" >Poland</a></li>
+            <li><a href="#" data-country="PT" data-link="" >Portugal</a></li>
+            <li><a href="#" data-country="RO" data-link="" >Romania</a></li>
+            <li><a href="#" data-country="RS" data-link="" >Serbia</a></li>
+            <li><a href="#" data-country="SK" data-link="" >Slovakia</a></li>
+            <li><a href="#" data-country="SI" data-link="" >Slovenia</a></li>
+            <li><a href="#" data-country="SE" data-link="" >Sweden</a></li>
+
+    </ul>   
+
+                                    </div>
+                                </div>
+                                <div class="spacer"></div>
+
+                        </div>
+                        <div class="column ">
+                                <h4>Asia</h4>
+    <ul>
+            <li><a href="#" data-country="BD" data-link="" >Bangladesh</a></li>
+            <li><a href="#" data-country="BN" data-link="" >Brunei Darussalam</a></li>
+            <li><a href="#" data-country="KH" data-link="" >Cambodia</a></li>
+            <li><a href="#" data-country="CN" data-link="https://sciex.com.cn/" >中国</a></li>
+            <li><a href="#" data-country="HK" data-link="" >Hong Kong</a></li>
+            <li><a href="#" data-country="IN" data-link="" >India</a></li>
+            <li><a href="#" data-country="ID" data-link="" >Indonesia</a></li>
+            <li><a href="#" data-country="JP" data-link="https://sciex.jp/" >日本</a></li>
+            <li><a href="#" data-country="KR" data-link="http://www.absciex-korea.com/" >한국</a></li>
+            <li><a href="#" data-country="SG" data-link="" >Singapore</a></li>
+            <li><a href="#" data-country="LK" data-link="" >Sri Lanka</a></li>
+            <li><a href="#" data-country="TW" data-link="" >Taiwan</a></li>
+            <li><a href="#" data-country="TH" data-link="" >Thailand</a></li>
+            <li><a href="#" data-country="VN" data-link="" >Viet Nam</a></li>
+
+    </ul>   
+                                <div class="spacer"></div>
+
+                        </div>
+                        <div class="column ">
+                                <h4>Middle East</h4>
+    <ul>
+            <li><a href="#" data-country="BH" data-link="" >Bahrain</a></li>
+            <li><a href="#" data-country="IR" data-link="" >Iran</a></li>
+            <li><a href="#" data-country="IQ" data-link="" >Iraq</a></li>
+            <li><a href="#" data-country="IL" data-link="" >Israel</a></li>
+            <li><a href="#" data-country="JO" data-link="" >Jordan</a></li>
+            <li><a href="#" data-country="KW" data-link="" >Kuwait</a></li>
+            <li><a href="#" data-country="LB" data-link="" >Lebanon</a></li>
+            <li><a href="#" data-country="OM" data-link="" >Oman</a></li>
+            <li><a href="#" data-country="PK" data-link="" >Pakistan</a></li>
+            <li><a href="#" data-country="PS" data-link="" >Palestine</a></li>
+            <li><a href="#" data-country="QA" data-link="" >Qatar</a></li>
+            <li><a href="#" data-country="SA" data-link="" >Saudi Arabia</a></li>
+            <li><a href="#" data-country="SY" data-link="" >Syria</a></li>
+            <li><a href="#" data-country="TR" data-link="" >Turkey</a></li>
+            <li><a href="#" data-country="AE" data-link="" >United Arab Emirates</a></li>
+            <li><a href="#" data-country="YE" data-link="" >Yemen</a></li>
+
+    </ul>   
+                                <div class="spacer"></div>
+
+                        </div>
+                        <div class="column ">
+                                <h4>Africa</h4>
+    <ul>
+            <li><a href="#" data-country="DZ" data-link="" >Algeria</a></li>
+            <li><a href="#" data-country="AO" data-link="" >Angola</a></li>
+            <li><a href="#" data-country="BW" data-link="" >Botswana</a></li>
+            <li><a href="#" data-country="BI" data-link="" >Burundi</a></li>
+            <li><a href="#" data-country="EG" data-link="" >Egypt</a></li>
+            <li><a href="#" data-country="ET" data-link="" >Ethiopia</a></li>
+            <li><a href="#" data-country="KE" data-link="" >Kenya</a></li>
+            <li><a href="#" data-country="LR" data-link="" >Liberia</a></li>
+            <li><a href="#" data-country="LY" data-link="" >Libya</a></li>
+            <li><a href="#" data-country="MA" data-link="" >Morocco</a></li>
+            <li><a href="#" data-country="RW" data-link="" >Rwanda</a></li>
+            <li><a href="#" data-country="ZA" data-link="" >South Africa</a></li>
+            <li><a href="#" data-country="TN" data-link="" >Tunisia</a></li>
+            <li><a href="#" data-country="UG" data-link="" >Uganda</a></li>
+            <li><a href="#" data-country="TZ" data-link="" >United Republic of Tanzania</a></li>
+            <li><a href="#" data-country="ZM" data-link="" >Zambia</a></li>
+            <li><a href="#" data-country="ZW" data-link="" >Zimbabwe</a></li>
+
+    </ul>   
+                                <div class="spacer"></div>
+
+                        </div>
+                        <div class="column ">
+                                <h4>Russia</h4>
+    <ul>
+            <li><a href="#" data-country="AM" data-link="" >Armenia</a></li>
+            <li><a href="#" data-country="AZ" data-link="" >Azerbaijan</a></li>
+            <li><a href="#" data-country="BY" data-link="" >Belarus</a></li>
+            <li><a href="#" data-country="GE" data-link="" >Georgia</a></li>
+            <li><a href="#" data-country="KZ" data-link="" >Kazakhstan</a></li>
+            <li><a href="#" data-country="KG" data-link="" >Kyrgyzstan</a></li>
+            <li><a href="#" data-country="MD" data-link="" >Moldova</a></li>
+            <li><a href="#" data-country="RU" data-link="" >Russia</a></li>
+            <li><a href="#" data-country="TJ" data-link="" >Tajikistan</a></li>
+            <li><a href="#" data-country="TM" data-link="" >Turkmenistan</a></li>
+            <li><a href="#" data-country="UA" data-link="" >Ukraine</a></li>
+            <li><a href="#" data-country="UZ" data-link="" >Uzbekistan</a></li>
+
+    </ul>   
+                                <div class="spacer"></div>
+                                <h4>Australia and New Zealand</h4>
+    <ul>
+            <li><a href="#" data-country="AU" data-link="" >Australia</a></li>
+            <li><a href="#" data-country="FM" data-link="" >Micronesia</a></li>
+            <li><a href="#" data-country="NZ" data-link="" >New Zealand</a></li>
+
+    </ul>   
+                                <div class="spacer"></div>
+
+                        </div>
+
+                </div>
+            </div>
         </div>
     </header>
     <header id="mobile-header" class="section">
@@ -1745,6 +2001,7 @@ For research use only. Not for use in diagnostic procedures.
 
         </div>
     </header>
+
 
 
 <!-- old nav bar -->
@@ -1800,6 +2057,16 @@ For research use only. Not for use in diagnostic procedures.
 
 <!-- end old nav bar -->
 
+    <div class="wide-search-wrap">
+        <div class="wide-search">
+            <form action="/search-results" method="get" class="nohtml">
+                <input type="text" name="term" placeholder="search our site" />
+                <button type="submit">
+                    <img src="//images.sciex.com/shared/icons/search-large.png" alt="Search">
+                </button>
+            </form>
+        </div>
+    </div>
 
 <!--================= start mega menu ===========================-->
 
@@ -1821,156 +2088,284 @@ For research use only. Not for use in diagnostic procedures.
 
           <ul class="dropdown-menu mega-dropdown-menu row">
            
-            <li class="col-sm-3">
-              <ul>
+         
+
+  <div class="wrapper">
+    <div class="nicemenu verticle" data-pos="list.right" data-classes="active" style="height:452px;">
+      <div class="nicemenu-item">
+        <h6>Mass Spectrometers<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub default">
+          <div class="w-3-1" style="width:35%;">
+            <h6>Quadrupole Time-of-Flight Systems</h6>
+            <p><a href="#">X500B QTOF</a></p>
+            <p><a href="#">X500R QTOF</a></p>
+            <p><a href="#">View All Routine Testing Systems <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            <p><li class="divider"></li></p>
+             <h6>Triple TOF Systems</h6>
+            <p><a href="#">TripleTOF 6600</a></p>
+            <p><a href="#">TripleTOF 5600+</a></p>
+            <p><a href="#">View All Advanced Testing Systems <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            <p><li class="divider"></li></p>
+             <h6>MALDI TOF Systems</h6>
+            <p><a href="#">TOF/TOF™ 5800</a></p>
+            <p><a href="#">V300 MALDI</a></p>
+          </div>
+    
+          <div class="w-3-1" style="width:35%;">
+            <h6>Triple Quadrupole Systems</h6>
+            <p><a href="#">Triple Quad 6500+</a></p>
+            <p><a href="#">Triple Quad 6000</a></p>
+            <p><a href="#">View All <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            <p><li class="divider"></li></p>
+             <h6>Ion Trap Triple Quadrupole Systems</h6>
+            <p><a href="#">QTRAP 6500+</a></p>
+            <p><a href="#">QTRAP 6500</a></p>
+            <p><a href="#">View All <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            <p><li class="divider"></li></p>
+              <h6>Clinical Mass Spectrometers</h6>
+            <p><a href="#">Topaz System</a></p>
+            <p><a href="#">4500 MD</a></p>
+            <p><a href="#">3200 MD</a></p>
+          </div> 
+        </div>
+      </div>
+      <div class="nicemenu-item">
+        <h6>Integrated Solutions<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>BioBA</h6>
+             <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+           <div class="w-3-1">
+            <h6>Biotransform</h6>
+             <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+           <div class="w-3-1">
+            <h6>Lipidyzer Platform</h6>
+             <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="nicemenu-item">
+        <h6>Capillary Electrophoresis Instruments<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+          <div class="w-3-1" style="width:60%;">
+          <h6>CESI 8000 Plus High Performance Separation-ESI-MS Module</h6>
+           <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+           <p><li class="divider"></li></p>
+            <h6>P/ACE MDQ Plus</h6>
+           <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+           <p><li class="divider"></li></p>
+            <h6>PA 800 Plus Pharmaceutical Analysis System</h6>
+           <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+           <p><li class="divider"></li></p>
+           <h6>GenomeLab GeXP Genetic Analysis System</h6>
+           <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="nicemenu-item">
+        <h6>Front-End HPLC MS<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>Analytical Flow LC</h6>
+             <p><a href="#">ExionLC 100</a></p>
+             <p><a href="#">ExionLC AC</a></p>
+             <p><a href="#">ExionLC AD</a></p>
+          </div>
+           <div class="w-3-1">
+            <h6>MicroLC</h6>
+            <p><a href="#">Micro HPLC Columns</a></p>
+            <p><a href="#">M3 MicroLC</a></p>
+          </div>
+           <div class="w-3-1">
+            <h6>NanoLC</h6>
+             <p><a href="#">NanoLC 400</a></p>
+             <p><a href="#">cHiPLC System</a></p>
+             <p><a href="#">Nano cHiPLC Columns</a></p>
+             <p><a href="#">Micro cHiPLC Columns</a></p>
+          </div>
+        </div>
+
+      </div>
+
+
+       <div class="nicemenu-item">
+        <h6>Ion Mobility Spectrometry<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>SelexION Technology</h6>
+             <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+
+    </div>
+
+
+<div class="nicemenu-item">
+        <h6>Ion Sources<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1" style="width:55%;">
+            <h6>Digital PicroView® Nanospray Ion Source</h6>
+            <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+    </div>
+
+
+
+<div class="nicemenu-item">
+        <h6>Methods<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1" style="width:25%;">
+            <h6>Clinical Research</h6>
+            <p><a href="#">AA45/20 1.0</a></p>
+            <p><a href="#">aTRAQ</a></p>
+            <p><li class="divider"></li></p>
+          </div>
+           <div class="w-3-1">
+            <h6>Environmental Testing</h6>
+            <p><a href="#">Illicit Drugs</a></p>
+            <p><a href="#">Industrial Chemicals (Bisphenol)</a></p>
+            <p><a href="#">Industrial Chemicals (Ethanolamines)</a></p>
+            <p><a href="#">Pesticides</a></p>
+            <p><a href="#">Pesticides (Herbicides)</a></p>
+            <p><a href="#">Pesticides (Polar)</a></p>
+            <p><a href="#">Pharmaceutical and Personal Care Products (PPCPs)</a></p>
+          </div>
+           <div class="w-3-1">
+            <h6>Food and Beverage Testing</h6>
+            <p><a href="#">Acrylamide</a></p>
+            <p><a href="#">Allergens</a></p>
+            <p><a href="#">Antiobiotics/Veterinary Drugs</a></p>
+            <p><a href="#">Cannabinoids</a></p>
+            <p><a href="#">Illegal Dyes</a></p>
+            <p><a href="#">Melamine</a></p>
+            <p><a href="#">Mycotoxins</a></p>
+            <p><a href="#">Pesticides</a></p>
+          </div>
+           <div class="w-3-1" style="clear:both;margin-top:-130px;width:25%;">
+            <h6>Forensics Testing</h6>
+            <p><a href="#">Benzodiazepines</a></p>
+            <p><a href="#">Blood Screening</a></p>
+            <p><a href="#">Drugs of Abuse</a></p>
+            <p><a href="#">EtG and EtS</a></p>
+            <p><a href="#">Nicotine</a></p>
+            <p><a href="#">THC-COOH</a></p>
+            <p><a href="#">Urine Screening</a></p>
+            <p><li class="divider"></li></p>
+            <h6>Pharma and Biopharma</h6>
+            <p><a href="#">Peptide and Protein Bioanalysis</a></p>
+            <p><a href="#">Routine Biologics Characterization</a></p>
+
+          </div>
           
-                <li class="dropdown-header">Integrated Solution</li>
-                <li><a href="#">BioBA Solution</a></li>
-                <li><a href="#">Biotransform Solution</a></li>
-                <li><a href="#">OneOmics</a></li>
-                <li><a href="#">The Lipidizer Platform</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Capillary Electrophoresis <br /> Instruments</li>
-                <li><a href="#">CESI 8000 High Performance Separation-ESI Module</a></li>
-                <li><a href="#">P/ACE MDQ Plus</a></li>
-                <li><a href="#">PA 800 Plus Pharmaceutical Analysis System</a></li>
-                <li><a href="#">GenomeLab GeXP Genetic Analysis System</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Diagnostic Instruments</li>
-                <li><a href="#">Instruments</a></li>
-                <li><a href="#">Assays</a></li>
-                <li><a href="#">Enhancements & Options</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">HPLC Products</li>
-                <li><a href="#">Analytical Flow LC</a></li>
-                <li><a href="#">MicroLC Products</a></li>
-                <li><a href="#">NanoLC Products</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Ion Mobility Spectrometry</li>
-                <li><a href="#">SelexION Technology</a></li>
-               
-            
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Mass Spectrometers</li>
-                <li><a href="#">QTOF Systems</a></li>
-                <li><a href="#">QTRAP Systems</a></li>
-                <li><a href="#">Triple Quad Systems</a></li>
-                <li><a href="#">TOF/TOF Systems</a></li>
-                <li><a href="#">Clinical Diagnostics Systems</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Methods</li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Software</li>
-                <li><a href="#">Analyst Software</a></li>
-                <li><a href="#">Analyst TF Software</a></li>
-                <li><a href="#">BioPharmaView Software</a></li>
-                <li><a href="#">ChemoView Software</a></li>
-                <li><a href="#">Cliquid Software</a></li>
-                <li><a href="#">DiscoveryQuant Software</a></li>
-                <li><a href="#">LibraryView Software</a></li>
-                <li><a href="#">LightSight Software</a></li>
-                <li><a href="#">LipidView Software</a></li>
-                <li><a href="#">MarkerView Software</a></li>
-                <li><a href="#">MasterView Software</a></li>
-                <li><a href="#">MetabolitePilot Software</a></li>
-                <li><a href="#">MPX Software</a></li>
-                <li><a href="#">OneOmics</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Ion Sources</li>
-                <li><a href="#">Digital PicoView® Nanospray Ion Source</a></li>
-                
-              </ul>
-            </li>
-             <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Software</li>
-                <li><a href="#">PeakView Software</a></li>
-                <li><a href="#">ProteinPilot Software</a></li>
-                <li><a href="#">SCIEX OS Software</a></li>
-                <li><a href="#">SimGlycan Software</a></li>
-                <li><a href="#">Skyline Software</a></li>
-                <li><a href="#">XCMS Plus Software</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Spectral Library</li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Standards and Reagents</li>
-                <li><a href="#">Amplifex Keto Reagent</a></li>
-                <li><a href="#">aTRAQ Kit for Amino Acid Analysis of Hydrolysates</a></li>
-                <li><a href="#">aTRAQ Kit for Amino Acid Analysis of Physiological Fluids</a></li>
-                <li><a href="#">Automated Protein Digestion Solution</a></li>
-                <li><a href="#">BioBA Sample Prep Kits</a></li>
-                <li><a href="#">Chemical Standards Kits</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Newsletter</li>
-                <form class="form" role="form">
-                  <div class="form-group">
-                    <label class="sr-only" for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                </form>
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Standards and Reagents</li>
-                <li><a href="#">Cleavable ICAT Reagent</a></li>
-                <li><a href="#">CYP450 Protein Assay - Human Induction Kit</a></li>
-                <li><a href="#">Fast Glycan Analysis and Labeling for the PA 800 Plus</a></li>
-                <li><a href="#">iDQuant Standards Kit for Pesticide Analysis</a></li>
-                <li><a href="#">iTRAQ Reagent</a></li>
-                <li><a href="#">Lipidyzer Platform Kits</a></li>
-                <li><a href="#">mTRAQ Reagent</a></li>
-                <li><a href="#">roQ QuEChERS Extraction and Dispersive Kit</a></li>
-                <li><a href="#">SWATH Acquisition Performance Kit</a></li>
-              </ul>
-            </li>
+        </div>
+
+    </div>
 
 
-            <li class="col-sm-3" xstyle="background:#e0e0e0;">
-              <ul>
-                <li class="divider"></li>
-                <li class="dropdown-header">Shop the SCIEX Store</li>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Software" class="img-responsive" alt="product 1"></a>
-                      <h4><small>Software</small></h4>
-                      <button class="btn btn-primary" type="button">Buy Now</button>
-                      
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Parts" class="img-responsive" alt="product 2"></a>
-                      <h4><small>Parts & Accessories</small></h4>
-                      <button class="btn btn-primary" type="button">Buy Now</button>
-                      
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Clearance" class="img-responsive" alt="product 3"></a>
-                      <h4><small>Clearance</small></h4>
-                      <button class="btn btn-primary" type="button">Buy Now</button>
-                      
-                    </div>
-                    <!-- End Item -->
-                  </div>
-                  <!-- End Carousel Inner -->
-                </div>
-                <!-- /.carousel -->
-                <!-- <li class="divider"></li>
-                <li><a href="#">View all products <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li> -->
-              </ul>
-            </li>
+<div class="nicemenu-item">
+        <h6>Software<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1" style="width:29%;">
+            <h6>Top Software Downloads</h6>
+            <p><a href="#">Analyst<sup>®</sup> Software</a></p>
+            <p><a href="#">MarkerView™ Software</a></p>
+            <p><a href="#">MultiQuant™ Software</a></p>
+            <p><a href="#">PeakView<sup>®</sup> Software</a></p>
+            <p><a href="#">ProteinPilot™ Software</a></p>
+            <p><a href="#">SCIEX OS Software</a></p>
+          </div>
+           <div class="w-3-1">
+            <h6>More Software Downloads</h6>
+            <p><a href="#">Analyst<sup>®</sup> TF Software</a></p>
+            <p><a href="#">BioPharmaView™ Software</a></p>
+            <p><a href="#">Cliquid<sup>®</sup> Software</a></p>
+            <p><a href="#">DiscoveryQuant™ Software</a></p>
+            <p><a href="#">Imaging Acquisition MALDI Software</a></p>
+            <p><a href="#">LibraryView™ Software</a></p>
+            <p><a href="#">LipidView™ Software</a></p>
+            <p><a href="#">MasterView™ Software</a></p>
+            <p><a href="#">MetabolitePilot™ Software</a></p>
+            <p><a href="#">MPX™ Software</a></p>
+          </div>
+           <div class="w-3-1">
+            <h6>Additional Downloads</h6>
+            <p><a href="#">Converters</a></p>
+            <p><a href="#">Drivers</a></p>
+            <p><a href="#">Eksigent Software Downloads</a></p>
+            <p><a href="#">Libraries</a></p>
+            <p><a href="#">MMS Wiff</a></p>
+            <p><a href="#">OneOmics</a></p>
+            <p><a href="#">SWATH™ Software Downloads</a></p>
+          </div>
+        </div>
+
+    </div>
 
 
+<div class="nicemenu-item">
+        <h6>Spectral Library<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>HR Libraries</h6>
+            <p><a href="#">All In One Library</a></p>
+            <p><a href="#">Antiobiotic Library</a></p>
+            <p><a href="#">Flurochemical Library</a></p>
+            <p><a href="#">Forensic Library</a></p>
+            <p><a href="#">Mycotoxin Library</a></p>
+            <p><a href="#">Pesticide Library</a></p>
+          </div>
+           <div class="w-3-1">
+            <h6>QTRAP<sup>®</sup> Libraries</h6>
+            <p><a href="#">Antibiotic Library</a></p>
+            <p><a href="#">Forensic Library</a></p>
+            <p><a href="#">Meta Library</a></p>
+            <p><a href="#">Mycotoxin Library</a></p>
+            <p><a href="#">Pesticide Library</a></p>   
+          </div>
+        </div>
+
+    </div>
+
+
+
+<div class="nicemenu-item">
+        <h6>Standards and Reagents<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1" style="width:45%;">
+            <h6>Kits</h6>
+            <p><a href="#">aTRAQ Kit for Amino Acid Analysis of Hydrolysates</a></p>
+            <p><a href="#">aTRAQ Kit for Amino Acid Analysis of Physiological Fluids</a></p>
+            <p><a href="#">Automated Protein Digestion Solution</a></p>
+            <p><a href="#">BioBA Sample Prep Kits</a></p>
+            <p><a href="#">Chemical Standard Kits</a></p>
+            <p><a href="#">CYP450 Protein Assay - Human Induction Kit</a></p>
+            <p><a href="#">Fast Glycan Analysis and Labeling for the PA 800 Plus</a></p>
+            <p><a href="#">iDQuant Standards Kit for Pesticide Analysis</a></p>
+            <p><a href="#">Lipidyzer Platform Kits</a></p>
+            <p><a href="#">roQ QuEChERS Extraction and Dispersive Kit</a></p>
+            <p><a href="#">SWATH Acquisition Performance Kit</a></p>
+          </div>
+           <div class="w-3-1">
+            <h6>Reagents</h6>
+            <p><a href="#">Ampliflex Diene Reagent</a></p>
+            <p><a href="#">Ampliflex Keto Reagent</a></p>
+            <p><a href="#">Cleavable ICAT Reagent</a></p>
+            <p><a href="#">iTRAQ Reagent</a></p>
+            <p><a href="#">mTRAQ Reagent</a></p>
+          </div>
+        </div>
+
+    </div>
+  </div>
 
           </ul>
      
         </li>
+
+
 
 
   <!-- start Technology item -->
@@ -1978,112 +2373,32 @@ For research use only. Not for use in diagnostic procedures.
         <li class="dropdown mega-dropdown-technology">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technology <!-- <span class="glyphicon glyphicon-chevron-down pull-right"></span> --></a>
 
-          <ul class="dropdown-menu mega-dropdown-menu-technology row">
+          <ul class="dropdown-menu mega-dropdown-menu-technology row" style="padding:20px 0 0 0;">
            
             <li class="col-sm-3">
               <ul>
-                <li class="dropdown-header">Technology</li>
-                <li><a href="#">www.sciexdiagnostics.com</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Technology</li>
-                <li><a href="#">Endocrinology and Biomarkers</a></li>
-                <li><a href="#">Research into Inborn Errors of Metabolism</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Technology</li>
-                <li><a href="#">Agrochemical and Crop Science</a></li>
-                <li><a href="#">Contaminants of Emerging Concern</a></li>
-                <li><a href="#">Drinking Water Testing</a></li>
-                <li><a href="#">Environmental Health Analysis</a></li>
-                <li><a href="#">Soil and Biota Analysis</a></li>
-                <li><a href="#">Unknown Surveillance</a></li>
-                <li><a href="#">Water Quality Testing</a></li>
+                <li class="dropdown-header"><a href="https://sciex.com/x59418.xml"><img src="//images.sciex.com/technology/swath/technology-panels_SWATH_250x200.jpg" alt="SWATH® Acquisition"></a></li>
+                <li><a class="technology" href="https://sciex.com/x59418.xml">QTRAP<sup>®</sup> Technology</a></li>
               </ul>
             </li>
             <li class="col-sm-3">
               <ul>
-                <li class="dropdown-header">Technology</li>
-                <li><a href="#">Antibiotic Testing</a></li>
-                <li><a href="#">Chemical Adulterant Analysis</a></li>
-                <li><a href="#">Food Allergens</a></li>
-                <li><a href="#">Food Fraud Analysis</a></li>
-                <li><a href="#">Ingredient Analysis</a></li>
-                <li><a href="#">Mycotoxin & Natural Toxin Testing</a></li>
-                <li><a href="#">Packaging & Food Contact Substance Analysis</a></li>
-                <li><a href="#">Pesticide Testing</a></li>
-                <li><a href="#">Unknown Contaminant Screening</a></li>
-                <li><a href="#">Vitamin Nutritional Analysis</a></li>
+                <li class="dropdown-header"><a href="https://sciex.com/technology/swath-acquisition"><img src="//images.sciex.com/technology/swath/technology-panels_SWATH_250x200.jpg" alt="SWATH® Acquisition"></a></li>
+                <li><a class="technology" href="https://sciex.com/technology/swath-acquisition">SWATH<sup>®</sup> Acquisition</a></li>
               </ul>
             </li>
              <li class="col-sm-3">
               <ul>
-                <li class="dropdown-header">Technology</li>
-                <li><a href="#">Forensic Drug Testing</a></li>
-                <li><a href="#">Designer Drug Testing</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Technology</li>
-                <li><a href="#">Proteomics</a></li>
-                <li><a href="#">Lipidomics</a></li>
-                <li><a href="#">Metabolomics</a></li>
-                <li><a href="#">Genomics</a></li>
-                <li><a href="#">Multi-Omics Bioinformatics</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Newsletter</li>
-                <form class="form" role="form">
-                  <div class="form-group">
-                    <label class="sr-only" for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                </form>
+                <li class="dropdown-header"><a href="https://sciex.com/x2180.xml"><img src="//images.sciex.com/products/ion_mobility/selexion/technology-panels_SelexION_250x200.jpg" alt="SelexION Technology"></a></li>
+                <li><a class="technology" href="https://sciex.com/x2180.xml">SelexION<sup>®</sup> Technology</a></li>
               </ul>
             </li>
             <li class="col-sm-3">
               <ul>
-                <li class="dropdown-header">Technology</li>
-                <li><a href="#">ADME and Metabolite Identification</a></li>
-                <li><a href="#">Bioanalysis</a></li>
-                <li><a href="#">Biologics Characterization</a></li>
-                <li><a href="#">Drug Product Impurity Profiling</a></li>
+                <li class="dropdown-header"><a href="https://sciex.com/technology/microflow-technology"><img src="//images.sciex.com/products/hplc_products/microlc_products/technology-panels_MicroLC_250x200.jpg" alt="Microflow Technology"></a></li>
+                <li><a class="technology" href="https://sciex.com/technology/microflow-technology">Microflow Technology</a></li>
               </ul>
             </li>
-
-
-            <li class="col-sm-3" xstyle="background:#e0e0e0;">
-              <ul>
-                <li class="divider"></li>
-                <li class="dropdown-header">Shop the SCIEX Store</li>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Software" class="img-responsive" alt="product 1"></a>
-                      <h4><small>Software</small></h4>
-                      <button class="btn btn-primary" type="button">Buy Now</button>
-                      
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Parts" class="img-responsive" alt="product 2"></a>
-                      <h4><small>Parts & Accessories</small></h4>
-                      <button class="btn btn-primary" type="button">Buy Now</button>
-                      
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Clearance" class="img-responsive" alt="product 3"></a>
-                      <h4><small>Clearance</small></h4>
-                      <button class="btn btn-primary" type="button">Buy Now</button>
-                      
-                    </div>
-                    <!-- End Item -->
-                  </div>
-                  <!-- End Carousel Inner -->
-                </div>
-                <!-- /.carousel -->
-                <!-- <li class="divider"></li>
-                <li><a href="#">View all products <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li> -->
-              </ul>
-            </li>
-
 
 
           </ul>
@@ -2099,116 +2414,199 @@ For research use only. Not for use in diagnostic procedures.
 
           <ul class="dropdown-menu mega-dropdown-menu-applications row">
            
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Clinical Diagnostics</li>
-                <li><a href="#">www.sciexdiagnostics.com</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Clinical Research</li>
-                <li><a href="#">Endocrinology and Biomarkers</a></li>
-                <li><a href="#">Research into Inborn Errors of Metabolism</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Environmental Testing</li>
-                <li><a href="#">Agrochemical and Crop Science</a></li>
-                <li><a href="#">Contaminants of Emerging Concern</a></li>
-                <li><a href="#">Drinking Water Testing</a></li>
-                <li><a href="#">Environmental Health Analysis</a></li>
-                <li><a href="#">Soil and Biota Analysis</a></li>
-                <li><a href="#">Unknown Surveillance</a></li>
-                <li><a href="#">Water Quality Testing</a></li>
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Food and Beverage Testing</li>
-                <li><a href="#">Antibiotic Testing</a></li>
-                <li><a href="#">Chemical Adulterant Analysis</a></li>
-                <li><a href="#">Food Allergens</a></li>
-                <li><a href="#">Food Fraud Analysis</a></li>
-                <li><a href="#">Ingredient Analysis</a></li>
-                <li><a href="#">Mycotoxin & Natural Toxin Testing</a></li>
-                <li><a href="#">Packaging & Food Contact Substance Analysis</a></li>
-                <li><a href="#">Pesticide Testing</a></li>
-                <li><a href="#">Unknown Contaminant Screening</a></li>
-                <li><a href="#">Vitamin Nutritional Analysis</a></li>
-              </ul>
-            </li>
-             <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Forensics Testing</li>
-                <li><a href="#">Forensic Drug Testing</a></li>
-                <li><a href="#">Designer Drug Testing</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Life Science Research</li>
-                <li><a href="#">Proteomics</a></li>
-                <li><a href="#">Lipidomics</a></li>
-                <li><a href="#">Metabolomics</a></li>
-                <li><a href="#">Genomics</a></li>
-                <li><a href="#">Multi-Omics Bioinformatics</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Newsletter</li>
-                <form class="form" role="form">
-                  <div class="form-group">
-                    <label class="sr-only" for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                </form>
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Pharma and Biopharma</li>
-                <li><a href="#">ADME and Metabolite Identification</a></li>
-                <li><a href="#">Bioanalysis</a></li>
-                <li><a href="#">Biologics Characterization</a></li>
-                <li><a href="#">Drug Product Impurity Profiling</a></li>
-              </ul>
-            </li>
+             
+  <div class="wrapper">
+    <div class="nicemenu verticle" data-pos="list.right" data-classes="active" style="height:294px;margin:0;">
+
+    <div class="nicemenu-item">
+        <h6>Clinical Diagnostics<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub default">
+           <div class="w-3-1">
+            <h6>Clinical Diagnostics</h6>
+            <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+         
+        </div>
+
+    </div>
 
 
-            <li class="col-sm-3" xstyle="background:#e0e0e0;">
-              <ul>
-                <li class="divider"></li>
-                <li class="dropdown-header">Shop the SCIEX Store</li>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Software" class="img-responsive" alt="product 1"></a>
-                      <h4><small>Software</small></h4>
-                      <button class="btn btn-primary" type="button">Buy Now</button>
-                      
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Parts" class="img-responsive" alt="product 2"></a>
-                      <h4><small>Parts & Accessories</small></h4>
-                      <button class="btn btn-primary" type="button">Buy Now</button>
-                      
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Clearance" class="img-responsive" alt="product 3"></a>
-                      <h4><small>Clearance</small></h4>
-                      <button class="btn btn-primary" type="button">Buy Now</button>
-                      
-                    </div>
-                    <!-- End Item -->
-                  </div>
-                  <!-- End Carousel Inner -->
-                </div>
-                <!-- /.carousel -->
-                <!-- <li class="divider"></li>
-                <li><a href="#">View all products <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li> -->
-              </ul>
-            </li>
+    <div class="nicemenu-item">
+        <h6>Lab Developed Tests<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>Lab Developed Tests</h6>
+            <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+    </div>
 
 
+      <div class="nicemenu-item">
+        <h6>Environmental Testing<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+          <div class="w-3-1" style="width:35%;">
+            <h6>Agrochemical and Crop Science</h6>
+            <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            <h6>Drinking Water Testing</h6>
+            <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            <h6>Environmental Health Analysis</h6>
+            <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            <h6>Soil and Biota Analysis</h6>
+            <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            <h6>Unknown Surveillance</h6>
+            <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+          <div class="w-3-1" style="width:45%;">
+            <h6>Contaminants of Emerging Concern</h6>
+            <p><a href="#">Disinfection By-Products</a></p>
+            <p><a href="#">Endocrine Disruptors</a></p>
+            <p><a href="#">Industrial Chemicals</a></p>
+            <p><a href="#">Natural and Freshwater Toxin Analysis</a></p>
+            <p><a href="#">Persistant Organic Pollutants (POPs)</a></p>
+            <p><a href="#">Pesticide and Herbicide Analysis</a></p>
+            <p><a href="#">Pharmaceuticals and Personal Care Products (PPCPs)</a></p>
+
+            <h6>Water Quality Testing</h6>
+            <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="nicemenu-item">
+        <h6>Food and Beverage Testing<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>Antibiotic Testing</h6>
+            <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            <p><li class="divider"></li></p>
+            <h6>Chemical Adulterant Testing</h6>
+            <p><a href="#">Food Processing Contaminants</a></p>
+            <p><a href="#">Melamine and Cyanuric Acid Analysis</a></p>
+            <p><a href="#">Chemical Dye Analysis</a></p>
+            <p><li class="divider"></li></p>
+            <h6>Food Allergens</h6>
+            <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+          
+          <div class="w-3-1"">
+          <h6>Food Fraud Analysis</h6>
+           <p><a href="#">Ingredient Authenticity and Profiling</a></p>
+           <p><a href="#">Meat Speciation and Halal Food Testing</a></p>
+           <p><li class="divider"></li></p>
+           <h6>Ingredient Analysis</h6>
+           <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+           <p><li class="divider"></li></p>
+           <h6>Mycotoxin and Natural Toxin Testing</h6>
+           <p><a href="#">Mycotoxins</a></p>
+           <p><a href="#">Marine Toxins</a></p>
+          </div>
+          
+          <div class="w-3-1">
+            <h6>Packaging and Food Contact Substance Analysis</h6>
+            <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            <p><li class="divider"></li></p>
+            <h6>Unknown Contaminant Screening</h6>
+            <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            <p><li class="divider"></li></p>
+            <h6>Vitamin Nutritional Analysis</h6>
+            <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+           
+        </div>
+      </div>
+
+      <div class="nicemenu-item">
+        <h6>Forensics Testing<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+          <div class="w-3-1">
+          <h6>Forensic Drug Testing</h6>
+          <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+           <div class="w-3-1">
+          <h6>Designer Drug Testing</h6>
+          <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="nicemenu-item">
+        <h6>Life Science Research<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>Proteomics</h6>
+             <p><a href="#">Discovery Proteomics</a></p>
+             <p><a href="#">Next-Generation Proteomics</a></p>
+             <p><a href="#">Targeted Proteomics</a></p>
+             <p><li class="divider"></li></p>
+          </div>
+           <div class="w-3-1">
+            <h6>Lipidomics</h6>
+            <p><a href="#">Discovery Lipidomics</a></p>
+            <p><a href="#">Targeted Lipidomics</a></p>
+            <p><a href="#">Lipidyzer Platform</a></p>
+          </div>
+           <div class="w-3-1">
+            <h6>Metabolomics</h6>
+             <p><a href="#">Discovery Metabolomics</a></p>
+             <p><a href="#">Targeted Metabolomics</a></p>
+          </div>
+          <div class="w-3-1" style="clear:both;">
+            <h6>Lipidomics</h6>
+            <p><a href="#">Gene Expression Analysis</a></p>
+            <p><a href="#">DNA Sequencing</a></p>
+            <p><a href="#">Genotyping and SNP Analysis</a></p>
+            <p><a href="#">STR Analysis</a></p>
+            <p><a href="#">AFLPs</a></p>
+          </div>
+        </div>
+
+      </div>
+
+
+       <div class="nicemenu-item">
+        <h6>Pharma and Biopharma<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>ADME and Metabolite Identification</h6>
+            <p><a href="#">High Throughput ADME</a></p>
+            <p><a href="#">Metabolite Identification</a></p>
+            <p><a href="#">Metabolic Stability and Quantitation</a></p>
+            <p><li class="divider"></li></p>
+          </div>
+           <div class="w-3-1">
+            <h6>Bioanalysis</h6>
+            <p><a href="#">Biologics Bioanalysis (BioBA)</a></p>
+            <p><a href="#">Bioanalysis of Small Molecules</a></p>
+            <p><a href="#">Bioanalysis of Therapeutic Peptides and Proteins</a></p>
+            <p><a href="#">Bioanalysis of Monoclonal Antibodies</a></p>
+            <p><a href="#">Bioanalysis of Oligonucleotides</a></p>
+            <p><a href="#">Bioanalysis of PEGylated Proteins</a></p>
+          </div>
+           <div class="w-3-1">
+            <h6>Biologics Characterization</h6>
+            <p><a href="#">Intact Protein Molecular Weight Characterization</a></p>
+            <p><a href="#">Biologics Peptide Mapping</a></p>
+            <p><a href="#">Biologics Analysis by CESI-MS</a></p>
+            <p><a href="#">Glycan Analysis</a></p>
+            <p><a href="#">Antibody Drug Conjugates</a></p>
+            <p><a href="#">Host Cell Proteins</a></p>
+            <p><a href="#">IgG Purity and Heterogeneity</a></p>
+            <p><a href="#">Charge Heterogeneity Analysis</a></p>
+          </div>
+          <div class="w-3-1" style="clear:both;margin-top:-115px;">
+            <h6>Drug Product Impurty Profiling</h6>
+             <p><a href="#">Drug Product Impurty Profiling</a></p>
+          </div>
+        </div>
+
+    </div>
+
+
+
+  </div>
 
           </ul>
      
         </li>
-
 
 
 <!-- start Diagnostics nav item -->
@@ -2216,54 +2614,49 @@ For research use only. Not for use in diagnostic procedures.
   <li class="dropdown mega-dropdown-diagnostics">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Diagnostics <!-- <span class="glyphicon glyphicon-chevron-down pull-right"></span> --></a>
 
-          <ul class="dropdown-menu mega-dropdown-menu-diagnostics row">
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">In Vitro Diagnostics Products</li>
-                <li><a href="https://sciexstaging.ingeniuxondemand.com/products/in-vitro-diagnostics/medical-devices/">Medical Devices</a></li>
-                    <ul>
-                    <li><a href="https://sciexstaging.ingeniuxondemand.com/products/in-vitro-diagnostics/medical-devices/topaz-system">Topaz System</a></li>
-                    <li><a href="https://sciexstaging.ingeniuxondemand.com/products/in-vitro-diagnostics/medical-devices/4500md-mass-spectrometer">4500 MD System</a></li>
-                    <li><a href="https://sciexstaging.ingeniuxondemand.com/products/in-vitro-diagnostics/medical-devices/3200md-mass-spectrometer">3200 MD System</a></li>
-                    </ul>
-                <li><a href="#">Clinical Assays</a></li>
-                    <ul><li><a href="#">Vitamin D Assay Kit</a></li>
-                    </ul>
-                <li><a href="#">Clinical Enhancements</a></li>
+     <ul class="dropdown-menu mega-dropdown-menu-diagnostics row">
+         
+   <div class="wrapper">
+     <div class="nicemenu verticle" data-pos="list.right" data-classes="active" style="height:126px;margin:0;">
+      <div class="nicemenu-item">
+        <h6>Products<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub default">
+           <div class="w-3-1" style="width:50%;">
+            <h6>In Virto Diagnostics / Medical Devices</h6>
+             <p><a href="#">Topaz System</a></p>
+             <p><a href="#">4500 MD</a></p>
+             <p><a href="#">3200 MD</a></p>
+          </div>
+         
+        </div>
 
-                <!-- <li class="divider"></li> -->
-               
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Clinical Applications</li>
-                <li><a href="https://sciexstaging.ingeniuxondemand.com/applications/clinical-market-applications">Endocrinology and Biomarkers</a></li>
-                <li><a href="https://sciexstaging.ingeniuxondemand.com/applications/clinical-market-applications">Research into Inborn Errors of Metabolism</a></li>
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Service & Support</li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Support</a></li>
-              </ul>
-            </li>
-            
-            <li class="col-sm-3">
-              <ul>
-                <!-- <li class="dropdown-header">Diagnostics</li> -->
-                <!-- <li class="divider"></li> -->
-                <li class="dropdown-header">Newsletter</li>
-                <form class="form" role="form">
-                  <div class="form-group">
-                    <label class="sr-only" for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                </form>
-              </ul>
-            </li>
+    </div>
+
+
+    <div class="nicemenu-item">
+        <h6>Applications<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>Clinical Applications</h6>
+            <p><a href="#">Vitamin D Assay Kit</a></p>
+          </div>
+        </div>
+    </div>
+
+
+      <div class="nicemenu-item">
+        <h6>Education<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+          <div class="w-3-1">
+            <h6>Education</h6>
+            <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+          
+        </div>
+      </div>
+      
+
+          
           </ul>
 
         </li>
@@ -2275,79 +2668,81 @@ For research use only. Not for use in diagnostic procedures.
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Education <!-- <span class="glyphicon glyphicon-chevron-down pull-right"></span> --></a>
 
           <ul class="dropdown-menu mega-dropdown-menu-education row">
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">SCIEXUniversity</li>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Course" class="img-responsive" alt="product 1"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Course" class="img-responsive" alt="product 2"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Course" class="img-responsive" alt="product 3"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                  </div>
-                  <!-- End Carousel Inner -->
-                </div>
-                <!-- /.carousel -->
-                <li class="divider"></li>
-                <li><a href="https://sciex.com/support/training/course-catalog">View Course Catalog  <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Training Calendar</li>
-                <li><a href="#">China</a></li>
-                <li><a href="#">Europe</a></li>
-                <li><a href="#">Germany CE Courses</a></li>
-                <li><a href="#">India</a></li>
-                <li><a href="#">Japan</a></li>
-                <li><a href="#">Korea</a></li>
-                <li><a href="#">North America</a></li>
-                 <li class="divider"></li>
-                <li class="dropdown-header">SCIEXUniversity Catalog</li>
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Customer Site Training</li>
-                <li><a href="#">Application Scientist Support</a></li>
-                <li><a href="#">Basic MS Operation and Maintenance Training</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Grant Support</li>
-                <li><a href="#">academic partnership</a></li>
-                
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Innovation Advisory Board</li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Newsletter</li>
-                <form class="form" role="form">
-                  <div class="form-group">
-                    <label class="sr-only" for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                </form>
-              </ul>
-            </li>
+           
+         
+
+    <div class="wrapper">
+     <div class="nicemenu verticle" data-pos="list.right" data-classes="active" style="height:210px;margin:0;">
+      <div class="nicemenu-item">
+        <h6>SCIEX<strong>U</strong>niversity Catalog<span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub default">
+           <div class="w-3-1" style="width:50%;">
+            <h6>SCIEX<strong>U</strong>niversity Catalog</h6>
+             <p><a href="#">View Catalog <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+             <!-- <p><li class="divider"></li></p> -->
+          </div>
+        </div>
+
+    </div>
+
+
+    <div class="nicemenu-item">
+        <h6>Training Calendar <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+             <h6>Training Calendar</h6>
+                <p><a href="#">China</a></p>
+                <p><a href="#">Europe</a></p>
+                <p><a href="#">Germany CE Courses</a></p>
+                <p><a href="#">India</a></p>
+          </div>
+          <div class="w-3-1">
+             <h6>Training Calendar</h6>
+                <p><a href="#">Japan</a></p>
+                <p><a href="#">Korea</a></p>
+                <p><a href="#">North America</a></p>
+          </div>
+        </div>
+    </div>
+
+
+        <div class="nicemenu-item">
+        <h6>Customer Site Training <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1" style="width:50%;">
+             <h6>Customer Site Training</h6>
+                <p><a href="#">Application Scientist Support</a></p>
+                <p><a href="#">Basic MS Operation and Maintenance Training</a></p>
+          </div>
+        </div>
+    </div>
+
+     <div class="nicemenu-item">
+        <h6>Grant Support <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1" style="width:50%;">
+             <h6>Grant Support</h6>
+                <p><a href="#">Academic Partnership</a></p>
+          </div>
+        </div>
+    </div>
+
+      <div class="nicemenu-item">
+        <h6>Newsletters <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1" style="width:50%;">
+             <h6>Newsletters</h6>
+                  <p><a href="#">Environmental and Industrial Testing eNewsletters</a></p>
+                  <p><a href="#">Food Testing eNewsletters</a></p>
+                  <p><a href="#">Mass Spectator eNewsletters</a></p>
+                  <p><a href="#">SWATH<sup>®</sup> Acquisition eNewsletters</a></p>
+          </div>
+        </div>
+    </div>
+
+      
+
+  
           </ul>
 
         </li>
@@ -2360,253 +2755,273 @@ For research use only. Not for use in diagnostic procedures.
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <!-- <span class="glyphicon glyphicon-chevron-down pull-right"></span> --></a>
 
           <ul class="dropdown-menu mega-dropdown-menu-support row">
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">SCIEXUniversity</li>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Course" class="img-responsive" alt="product 1"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Course" class="img-responsive" alt="product 2"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Course" class="img-responsive" alt="product 3"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                  </div>
-                  <!-- End Carousel Inner -->
-                </div>
-                <!-- /.carousel -->
-                <li class="divider"></li>
-                <li><a href="https://sciex.com/support/training/course-catalog">View Course Catalog  <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">SCIEXNow™</li>
-                <li><a href="#">Support Cases</a></li>
-                <li><a href="#">Training</a></li>
-                <li><a href="#">Instruments</a></li>
-                <li><a href="#">Knowledge Base Articles</a></li>
-                <li class="dropdown-header">Services</li>
-                <li><a href="#">Service Plans</a></li>
-                <li><a href="#">Professional Services</a></li>
-                <li><a href="#">StatusScope Remote Monitoring</a></li>
-                
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Software Support</li>
-                <li><a href="#">Software Accelerator Program</a></li>
-                <li><a href="#">Software Support Plans</a></li>
-                <li><a href="#">Software Support Policy</a></li>
-                <li><a href="#">Software Downloads</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Request Support</li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Grant Support</li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Technical-Regulatory Documents</li>
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-               
-                <li class="dropdown-header">Newsletter</li>
-                <form class="form" role="form">
-                  <div class="form-group">
-                    <label class="sr-only" for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                </form>
-              </ul>
-            </li>
+           
+            <div class="wrapper">
+     <div class="nicemenu verticle" data-pos="list.right" data-classes="active" style="height:242px;margin:0;">
+      <div class="nicemenu-item">
+        <h6>SCIEXNow™ <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub default">
+           <div class="w-3-1">
+            <h6>Support Cases</h6>
+             <p><a href="#">View Support Cases <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+             <p><li class="divider"></li></p>
+             <h6>Training</h6>
+                <p><a href="#">Course Catalog</a></p>
+                <p><a href="#">Success Programs</a></p>
+              
+             <!-- <p><li class="divider"></li></p> -->
+          </div>
+          <div class="w-3-1">
+             <h6>Training</h6>
+              <p><a href="#">On-Site Training</a></p>
+              <p><a href="#">Customer Site Training</a></p>
+             <p><li class="divider"></li></p>
+            <h6>Instruments</h6>
+             <p><a href="#">View Instruments <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+         </div>
+         <div class="w-3-1">
+              <h6>Knowledge Base Articles</h6>
+              <p><a href="#">View Knowledge Base Articles <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+        </div>
+
+        </div>
+    </div>
+
+
+    <div class="nicemenu-item">
+        <h6>Services <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1" style="width:25%;">
+             <h6>Service Plans</h6>
+                <p><a href="#">Connect</a></p>
+                <p><a href="#">Maintenance Plus</a></p>
+                <p><a href="#">Repair</a></p>
+                <p><a href="#">Parts</a></p>
+                <p><a href="#">Assurance</a></p>
+                <p><a href="#">Priority</a></p>
+          </div>
+          <div class="w-3-1">
+           <h6>Service Plans</h6>
+                <p><a href="#">Complete</a></p>
+                <p><a href="#">Time and Materials</a></p>
+                <p><a href="#">Clinical Service Plan</a></p>
+                <p><li class="divider"></li></p>
+          <h6>StatusScope Remote Monitoring</h6>
+          <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+          <div class="w-3-1">
+           <h6>Professional Services</h6>
+                <p><a href="#">Compliance Services</a></p>
+                <p><a href="#">Custom Method Development and Consulting</a></p>
+                <p><a href="#">Professional Relocation Services</a></p>
+                <p><a href="#">On-Site Applications Support</a></p>
+          </div>
+        </div>
+    </div>
+
+
+        <div class="nicemenu-item">
+        <h6>Software Support <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+             <h6>Software Support</h6>
+                <p><a href="#">Software Accelerator Program</a></p>
+                <p><a href="#">Software Support Plans</a></p>
+                <p><a href="#">Software Downloads</a></p>
+                <p><a href="#">Software Support Policy</a></p>
+                <p><a href="#">Premium Access Content</a></p>
+          </div>
+        </div>
+    </div>
+
+     <div class="nicemenu-item">
+        <h6>Request Support <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+             <h6>Request Support</h6>
+                <p><a href="#">Frequently Asked Questions</a></p>
+                <p><a href="#">Grant Support</a></p>
+          </div>
+        </div>
+    </div>
+
+      <div class="nicemenu-item">
+        <h6>Technical-Regulatory Documents <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1" style="width:50%;">
+             <h6>Technical-Regulatory Documents</h6>
+                  <p><a href="#">Declaration of Conformance</a></p>
+                  <p><a href="#">Safety Data Sheets</a></p>
+                  <p><a href="#">Certificates of Analysis</a></p>
+          </div>
+        </div>
+    </div>
+
+      
+
+     
           </ul>
 
         </li>
 
 
-<!--start events -->
 
-
-         <li class="dropdown mega-dropdown-events">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <!-- <span class="glyphicon glyphicon-chevron-down pull-right"></span> --></a>
-
-          <ul class="dropdown-menu mega-dropdown-menu-events row">
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">SCIEXUniversity</li>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Course" class="img-responsive" alt="product 1"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Course" class="img-responsive" alt="product 2"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Course" class="img-responsive" alt="product 3"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                  </div>
-                  <!-- End Carousel Inner -->
-                </div>
-                <!-- /.carousel -->
-                <li class="divider"></li>
-                <li><a href="https://sciex.com/support/training/course-catalog">View Course Catalog  <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">On-Demand Videos</li>
-                <li><a href="#">China</a></li>
-                <li><a href="#">Europe</a></li>
-                <li><a href="#">Germany CE Courses</a></li>
-                <li><a href="#">India</a></li>
-                <li><a href="#">Japan</a></li>
-                <li><a href="#">Korea</a></li>
-                <li><a href="#">North America</a></li>
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Training Calendar</li>
-                <li><a href="#">Application Scientist Support</a></li>
-                <li><a href="#">Basic MS Operation and Maintenance Training</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Events</li>
-                <li><a href="#">academic partnership</a></li>
-                
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Events</li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Newsletter</li>
-                <form class="form" role="form">
-                  <div class="form-group">
-                    <label class="sr-only" for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                </form>
-              </ul>
-            </li>
-          </ul>
-
-        </li>
-
-
-<!--about us -->
+<!-- start about us -->
 
          <li class="dropdown mega-dropdown-aboutus">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <!-- <span class="glyphicon glyphicon-chevron-down pull-right"></span> --></a>
 
           <ul class="dropdown-menu mega-dropdown-menu-aboutus row">
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">SCIEXUniversity</li>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Course" class="img-responsive" alt="product 1"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Course" class="img-responsive" alt="product 2"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                    <div class="item">
-                      <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Course" class="img-responsive" alt="product 3"></a>
-                      <h4><small>Analyst® Software - Acquire</small></h4>
-                      <button class="btn btn-primary" type="button">Enroll</button>
-                      <button href="#" class="btn btn-default" type="button"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</button>
-                    </div>
-                    <!-- End Item -->
-                  </div>
-                  <!-- End Carousel Inner -->
-                </div>
-                <!-- /.carousel -->
-                <li class="divider"></li>
-                <li><a href="https://sciex.com/support/training/course-catalog">View Course Catalog  <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Contact Us</li>
-                <li><a href="#">China</a></li>
-                <li><a href="#">Europe</a></li>
-                <li><a href="#">Germany CE Courses</a></li>
-                <li><a href="#">India</a></li>
-                <li><a href="#">Japan</a></li>
-                <li><a href="#">Korea</a></li>
-                <li><a href="#">North America</a></li>
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Press Releases</li>
-                <li><a href="#">Photo Gallery</a></li>
-                <li><a href="#">Trends and Commentaries</a></li>
-                <li><a href="#">Awards</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Career Opportunities</li>
-                <li><a href="#">Career Opportunities</a></li>
-                
-              </ul>
-            </li>
-            <li class="col-sm-3">
-              <ul>
-                <li class="dropdown-header">Executive Management</li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Our History</li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Newsletter</li>
-                <form class="form" role="form">
-                  <div class="form-group">
-                    <label class="sr-only" for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                </form>
-              </ul>
-            </li>
+        
+
+   <div class="wrapper">
+     <div class="nicemenu verticle" data-pos="list.right" data-classes="active" style="height:504px;margin:0;">
+      <div class="nicemenu-item">
+        <h6>Community <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub default">
+           <div class="w-3-1">
+            <h6>Community</h6>
+             <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+    </div>
+
+    <div class="nicemenu-item">
+        <h6>Blogs <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>Blogs</h6>
+             <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="nicemenu-item">
+        <h6>Application Discussions <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1" style="width:45%;">
+             <h6>Application Discussions</h6>
+                <p><a href="#">Environmental, Food, and Beverage</a></p>
+                <p><a href="#">Lipidomics</a></p>
+                <p><a href="#">Metabolomics</a></p>
+                <p><a href="#">Omics Interest Groups</a></p>
+                <p><a href="#">Proteomics</a></p>
+                <p><a href="#">Technology</a></p>
+          </div>
+        </div>
+    </div>
+
+
+     <div class="nicemenu-item">
+        <h6>Basic Education <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>Basic Education</h6>
+             <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+    </div>
+
+
+        <div class="nicemenu-item">
+        <h6>Support Community <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+             <h6>Support Community</h6>
+                <p><a href="#">FAQs and Discussions</a></p>
+                <p><a href="#">Method Support</a></p>
+                <p><a href="#">Innovation Advisory Board</a></p>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="nicemenu-item">
+        <h6>About the Community <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>About the Community</h6>
+             <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+    </div>
+
+
+     <div class="nicemenu-item">
+        <h6>Events <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+             <h6>Events</h6>
+                <p><a href="#">On-Demand Videos</a></p>
+                <p><a href="#">Training Calendar</a></p>
+          </div>
+        </div>
+    </div>
+
+    <div class="nicemenu-item">
+        <h6>Contact Us <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>Contact Us</h6>
+             <p><a href="#">Contact Us <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+    </div>
+
+      <div class="nicemenu-item">
+        <h6>Press Releases <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1" style="width:50%;">
+             <h6>Press Releases</h6>
+                  <p><a href="#">Photo Gallery</a></p>
+                  <p><a href="#">Trends and Commentaries</a></p>
+                  <p><a href="#">Awards</a></p>
+          </div>
+        </div>
+    </div>
+
+      
+     <div class="nicemenu-item">
+        <h6>Career Opportunities <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>Career Opportunities</h6>
+             <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+    </div>
+
+
+     <div class="nicemenu-item">
+        <h6>Executive Management <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>Executive Management</h6>
+             <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+    </div>
+
+     <div class="nicemenu-item">
+        <h6>Our History <span class="right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h6>
+        <div class="nicemenu-sub">
+           <div class="w-3-1">
+            <h6>Our History</h6>
+             <p><a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+    </div>
+
+
           </ul>
 
         </li>
+
+     
+
+         <span class="findMore"><a class="btn orange" href="x107.xml">Contact Us</a></span>
+        
 
         <!-- end of nav items -->
 
@@ -3360,6 +3775,7 @@ For research use only. Not for use in diagnostic procedures.
  <script type="text/javascript">
 
 $(document).ready(function(){
+
     $(".mega-dropdown,.mega-dropdown-technology, .mega-dropdown-applications, .mega-dropdown-diagnostics, .mega-dropdown-education, .mega-dropdown-support, .mega-dropdown-events, .mega-dropdown-aboutus").hover(
         function() { $('.dropdown-menu', this).stop().fadeIn("fast");
         },
@@ -3370,7 +3786,10 @@ $(document).ready(function(){
 </script>
 
 
-
+ <script src="https://s3-us-west-1.amazonaws.com/codesandbox/megamenu/jquery.nicemenu.js"></script>
+  <script>
+    $(".nicemenu").nicemenu();
+  </script>
 
 <!--  <script type="text/javascript">
    $(document).on('click', '.mega-dropdown', function(e) {
